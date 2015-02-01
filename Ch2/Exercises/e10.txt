@@ -1,0 +1,16 @@
+In the dweight.c program, which spaces are essential?
+
+Answer:
+Required spaces are..
+0. the new line (space?) after <stdio.h> because directives are evaluated as an entire line by the preprocessor.
+
+1. the spaces between data types (int main) and (int height) are required, because otherwise those data types and identifiers would get mixed up into one token.
+
+2. the spaces inside strings because they are characters like anything else.
+
+3. the space after the return statement, because otherwise it interprets return0 as a single token (specifically an undeclared identifier)
+
+As a proof, the last two lines of this file are the dweight with all the required spaces removed. They will compile and run exactly like the original dweight. If any spaces are removed, it either won't compile or the output will be altered.
+
+#include<stdio.h>
+int main(void){int height,length,width,volume,weight;height=8;length=12;width=10;volume=height*length*width;weight=(volume+165)/166;printf("Dimensions: %dx%dx%d\n",length,width,height);printf("Volume (cubic inches): %d\n",volume);printf("Dimensional weight (pounds): %d\n",weight);return 0;}
