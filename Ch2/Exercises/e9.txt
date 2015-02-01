@@ -1,0 +1,5 @@
+Insert spaces between the tokens in Exercise 8 to make the statement easier to read.
+
+answer = (3*q - p*p) / 3;
+
+(I intentionally left out spaces around the asterisks because it makes the order of operations more clear.)
