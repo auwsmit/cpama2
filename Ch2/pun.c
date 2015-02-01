@@ -1,4 +1,5 @@
 /* Prints a bad pun. */
+
 #include <stdio.h>
 
 int main(void)
