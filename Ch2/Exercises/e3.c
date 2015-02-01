@@ -1,4 +1,4 @@
-/* Condence the dweight.c program by (1) replacing assignments to height,
+/* Condense the dweight.c program by (1) replacing assignments to height,
  * length, and width with initializers and (2) removing the weight variable,
  * instead calculating (volume+165) / 166 with the last printf.
  */
