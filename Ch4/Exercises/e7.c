@@ -11,7 +11,6 @@
  * 
  * Why doesn't this technique work?
  */
-
 #include <stdio.h>
 
 int main(void)
