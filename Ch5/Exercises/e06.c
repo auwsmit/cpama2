@@ -20,7 +20,7 @@ int main(void)
 /* Answer:
  * It is a legal statement.
  *
- * Here's what happens when n equals 0:
+ * Here's what happens when n equals 5:
  *
  * First, in the if's expression, 1-10 is evaluated to -9.
  * Then, (n == -9) is then evaluated as 0, meaning the final value is 0.
