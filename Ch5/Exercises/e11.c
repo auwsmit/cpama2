@@ -47,9 +47,6 @@ int main(void)
 		default:
 			printf("Area code not recognized");
 	}
+
 	return 0;
 }
-
-/* Answer:
- *
- */
