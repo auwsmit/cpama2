@@ -1,51 +1,52 @@
-/* In one state, single residents are subject to the following income tax:
+/* Here's a simplified version of the Beaufort scale, which is used to estimate
+ * wind force:
  *
- * Income           Amount of tax
- * Not over $750    1% of income
- * $750-$2,250      $7.50  plus 2% of amount over $750
- * $2,250-$3,750    $37.50  plus 2% of amount over $2,250
- * $3,750-$5,250    $82.50  plus 2% of amount over $3,750
- * $5,250-$7,000    $142.50  plus 2% of amount over $5,250
- * Over $7,000      $230.00  plus 2% of amount over $7,000
+ * Speed (knots)   Description
+ * Less than 1     Calm
+ * 1-3             Light air
+ * 4-27            Breeze
+ * 28-47           Gale
+ * 48-63           Storm
+ * Above 63        Hurricane
  *
- * Write a program that asks the user enter the amount of taxable income,
- * then displays the tax due.
+ * Write a program that asks the user to enter a wind speed (in knots),
+ * then displays the corresponding description.
  */
 #include <stdio.h>
 
 int main(void)
 {
-	float income, tax;
+	float windspeed;
 
-	printf("Enter amount of income: ");
-	scanf("%f", &income);
+	printf("Enter wind speed (in knots): ");
+	scanf("%f", &windspeed);
 
-	if (income < 750)
-	{
-		tax = income * 0.01;
-	}
-	else if (income >= 750 && income <= 2250)
-	{
-		tax = 7.50 + ((income - 750) * 0.02);
-	}
-	else if (income >= 2250 && income <= 3750)
-	{
-		tax = 37.50 + ((income - 2250) * 0.02);
-	}
-	else if (income >= 3750 && income <= 5250)
-	{
-		tax = 82.50 + ((income - 3750) * 0.02);
-	}
-	else if (income >= 5250 && income <= 7000)
-	{
-		tax = 142.50 + ((income - 5250) * 0.02);
-	}
-	else if (income > 7000)
-	{
-		tax = 230.50 + ((income - 7000) * 0.02);
-	}
+	printf("Wind Speed: ");
 
-	printf("Tax due: $%.2f", tax);
+	if (windspeed < 1)
+	{
+		printf("Calm");
+	}
+	else if (windspeed >= 1 && windspeed <= 3)
+	{
+		printf("Light air");
+	}
+	else if (windspeed >= 4 && windspeed <= 27)
+	{
+		printf("Breeze");
+	}
+	else if (windspeed >= 28 && windspeed <= 47)
+	{
+		printf("Gale");
+	}
+	else if (windspeed >= 48 && windspeed <= 63)
+	{
+		printf("Storm");
+	}
+	else if (windspeed > 63)
+	{
+		printf("Hurricane");
+	}
 
 	return 0;
 }
