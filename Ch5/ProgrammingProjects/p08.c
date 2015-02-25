@@ -27,73 +27,87 @@
 
 int main(void)
 {
-	int input_hours, input_mins,
-		depart_time, compare_time, arrival_time,
-		arrival_hours, arrival_mins, depart_hours, depart_mins;
+	int input_h, input_m, t8_00am, t9_43am, t11_19am,
+	t12_47pm, t2_00pm, t3_45pm, t7_00pm, t9_45pm, tmidnight;
 
 	printf("Enter a 24-hour time: ");
-	scanf("%d:%d", &input_hours, &input_mins);
+	scanf("%d:%d", &input_h, &input_m);
 
-	input_mins = input_hours * 60 + input_mins;
-	depart_time = 60 * 8;
-	arrival_time = (60 * 10) + 16;
-	compare_time = (60 * 9) + 43;
+	input_m = input_h * 60 + input_m;
 
-	if (input_mins > compare_time)
-	{
-		depart_time = compare_time;
-		arrival_time = (60 * 11) + 52;
-		compare_time = (60 * 11) + 19;
-	}
-	if (input_mins > compare_time)
-	{
-		depart_time = compare_time;
-		arrival_time = (60 * 1) + 31;
-		compare_time = (60 * 12) + 47;
-	}
-	if (input_mins > compare_time)
-	{
-		depart_time = compare_time;
-		arrival_time = (60 * 15);
-		compare_time = (60 * 14);
-	}
-	if (input_mins > compare_time)
-	{
-		depart_time = compare_time;
-		arrival_time = (60 * 16) + 8;
-		compare_time = (60 * 15) + 45;
-	}
-	if (input_mins > compare_time)
-	{
-		depart_time = compare_time;
-		arrival_time = (60 * 17) + 55;
-		compare_time = (60 * 19);
-	}
-	if (input_mins > compare_time)
-	{
-		depart_time = compare_time;
-		arrival_time = (60 * 21) + 20;
-		compare_time = (60 * 21) + 45;
-	}
-	if (input_mins > compare_time)
-	{
-		depart_time = compare_time;
-		arrival_time = (60 * 23) + 58;
-	}
+	t8_00am = (60 * 8);
+	t9_43am = (60 * 9) + 43;
+	t11_19am = (60 * 11) + 19;
+	t12_47pm = (60 * 12) + 47;
+	t2_00pm = (60 * 14);
+	t3_45pm = (60 * 15) + 45;
+	t7_00pm = (60 * 19);
+	t9_45pm = (60 * 21) + 45;
+	tmidnight = (60 * 24);
 
-	depart_mins = depart_time % 60;
-	depart_hours = (depart_time - depart_mins) / 60;
-	if (depart_hours > 12) depart_hours-= 12;
-	arrival_mins = arrival_time % 60;
-	arrival_hours = (arrival_time - arrival_mins) / 60;
-	if (arrival_hours > 12) arrival_hours-= 12;
+	if (input_m >= 60 * 24 || input_m < 0)
+	{
+		printf("Entered invalid time.");
+	}
+	else
+	{
+		printf("Closest departure time is ");
+		if (input_m >= 0 && input_m < t8_00am)
+			printf("8:00 a.m., arriving at 10:16 a.m.");
 
-	printf("Closest departure time is: %d:%.2d %c.m., ",
-		depart_hours, depart_mins,
-		(depart_time - depart_mins) / 60 < 12 ? 'a' : 'p');
-	printf("arriving at %d:%.2d %c.m.",
-		arrival_hours, arrival_mins,
-		(arrival_time - arrival_mins) / 60 < 12 ? 'a' : 'p');
+		if (input_m >= t8_00am && input_m < t9_43am)
+		{
+			if (input_m - t8_00am < t9_43am - input_m)
+				printf("8:00 a.m., arriving at 10:16 a.m.");
+			else
+				printf("9:43 a.m., arriving at 11:52 a.m.");
+		}
+		if (input_m >= t9_43am && input_m < t11_19am)
+		{
+			if (input_m - t9_43am < t11_19am - input_m)
+				printf("9:43 a.m., arriving at 11:52 a.m.");
+			else
+				printf("11:43 a.m., arriving at 1:31 p.m.");
+		}
+		if (input_m >= t11_19am && input_m < t12_47pm)
+		{
+			if (input_m - t11_19am < t12_47pm - input_m)
+				printf("11:43 a.m., arriving at 1:31 p.m.");
+			else
+				printf("12:47 p.m., arriving at 2:00 p.m.");
+		}
+		if (input_m >= t12_47pm && input_m < t2_00pm)
+		{
+			if (input_m - t12_47pm < t2_00pm - input_m)
+				printf("12:47 p.m., arriving at 2:00 p.m.");
+			else
+				printf("2:00 p.m., arriving at 4:08 p.m.");
+		}
+		if (input_m >= t2_00pm && input_m < t3_45pm)
+		{
+			if (input_m - t2_00pm < t3_45pm - input_m)
+				printf("2:00 p.m., arriving at 4:08 p.m.");
+			else
+				printf("3:45 p.m., arriving at 5:55 p.m.");
+		}
+		if (input_m >= t3_45pm && input_m < t7_00pm)
+		{
+			if (input_m - t3_45pm < t7_00pm - input_m)
+				printf("3:45 p.m., arriving at 5:55 p.m.");
+			else
+				printf("7:00 p.m., arriving at 9:20 p.m.");
+		}
+		if (input_m >= t7_00pm && input_m < t9_45pm)
+		{
+			if (input_m - t7_00pm < t9_45pm - input_m)
+				printf("7:00 p.m., arriving at 9:20 p.m.");
+			else
+				printf("9:45 p.m., arriving at 11:58 p.m.");
+		}
+
+		if (input_m >= t9_45pm && input_m < tmidnight)
+			printf("9:45 p.m., arriving at 11:58 p.m.");
+	}
 
 	return 0;
 }
