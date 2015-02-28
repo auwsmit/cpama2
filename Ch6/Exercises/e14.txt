@@ -1,0 +1,13 @@
+Find the error in the following program fragment and fix it.
+
+if (n % 2 == 0);
+  printf("n is even\n");
+
+Answer:
+
+The error was the first semicolon after the if condition. It considers that an empty statement, so the printf statement below always executes no matter what, even though it appears correct because of the indentation.
+
+Corrected version:
+
+if (n % 2 == 0)
+  printf("n is even\n");
