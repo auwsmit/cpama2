@@ -21,7 +21,7 @@
 
 int main(void)
 {
-	int month_days, starting_day, i, p;
+	int month_days, starting_day, i, day;
 
 	printf("Enter number of days in month: ");
 	scanf("%d", &month_days);
@@ -29,21 +29,21 @@ int main(void)
 	scanf("%d", &starting_day);
 	printf("\n");
 
-	for (p = 1, i = 1; p <= month_days; p++, i++)
+	for (day = 1, i = 1; day <= month_days; day++, i++)
 	{
 
 		if (i < starting_day)
 		{
 			printf("   ");
-			p--;
+			day--;
 		}
 		else if (i % 7 == 0)
 		{
-			printf("%2d ", p);
+			printf("%2d ", day);
 			printf("\n");
 		}
 		else
-			printf("%2d ", p);
+			printf("%2d ", day);
 	}
 
 	return 0;
