@@ -7,4 +7,34 @@
  * 1 + 1/1! + 1/2! + 1/3! + ... + 1/n!
  * where n is an integer entered by the user.
  */
-/* Not 100% sure how to do this, so incomplete */
+#include <stdio.h>
+
+int main(void)
+{
+	int precision, i;
+	float end_result, factorial, p;
+
+	printf("Enter a number: ");
+	scanf("%d", &precision);
+
+	end_result = 1;
+
+	printf("\ne = 1");
+	for (i = 1; i <= precision; i++)
+	{
+		/* calculating the factorial */
+		factorial = p = i;
+		while (p > 0)
+		{
+			if (p - 1 == 0) break;
+			factorial *= --p;
+		}
+
+		end_result += (1 / factorial);
+		printf(" + 1/%d!", i);
+	}
+
+	printf(" = %.4f\n", end_result);
+
+	return 0;
+}
