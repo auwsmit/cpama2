@@ -1,0 +1,7 @@
+Suppose that i and j are variables of type int. What is the type of
+the expression i / j + 'a'?
+
+Answer:
+The expression will be an int.
+
+'a' is actually an integer value, meaning the expression is made up of 3 ints.

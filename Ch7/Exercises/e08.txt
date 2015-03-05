@@ -1,0 +1,13 @@
+Repeat Exercise 7, but give the equivalent hexadecimal escape.
+
+(a) \b
+(b) \n
+(c) \r
+(d) \t
+
+Answer:
+
+A - \x08
+B - \x0a
+C - \x0d
+D - \x09
