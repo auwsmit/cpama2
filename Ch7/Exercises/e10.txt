@@ -1,0 +1,7 @@
+Suppose that i is a variable of type int, j is a variable of type long, and k is a variable of type unsigned int. What is the type of the expression i + (int) j * k?
+
+Answer:
+j is first explicitly converted from a long to an int.
+Then the expression becomes (int) + (int) * (unsigned int). Which is much more simple.
+
+The expression should evaluate to unsigned int in the end.
