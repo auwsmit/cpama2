@@ -1,0 +1,6 @@
+Suppose that i is a variable of type int, f is a variable of type float, and d is a variable of type double. Explain what conversion takes place during the execution of the following statement:
+
+d = i + f;
+
+Answer:
+In the statement, i is converted to a float, then the result of i + f is converted to a double in the end.
