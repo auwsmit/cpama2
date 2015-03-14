@@ -13,23 +13,23 @@
 
 int main(void)
 {
-	int d, n;
+    int d, n;
 
-	printf("Enter a number: ");
-	scanf("%d", &n);
+    printf("Enter a number: ");
+    scanf("%d", &n);
 
-	for (d = 2; d < n; d++)
-	{
-		if (n % (d * d) == 0)
-		{
-			printf("%d isn't prime", n);
-			return 0;
-		}
-	}
+    for (d = 2; d < n; d++)
+    {
+        if (n % (d * d) == 0)
+        {
+            printf("%d isn't prime", n);
+            return 0;
+        }
+    }
 
-	printf("%d is prime!", n);
+    printf("%d is prime!", n);
 
-	return 0;
+    return 0;
 }
 
 /* Really unsure about this one. I know it's more efficient than before, but

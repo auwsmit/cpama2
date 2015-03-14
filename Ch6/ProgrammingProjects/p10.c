@@ -14,46 +14,46 @@
 
 int main(void)
 {
-	int month1, day1, year1, month2, day2, year2;
+    int month1, day1, year1, month2, day2, year2;
 
-	printf("Enter date: (mm/dd/yy): ");
-	scanf("%d/%d/%d", &month1, &day1, &year1);
+    printf("Enter date: (mm/dd/yy): ");
+    scanf("%d/%d/%d", &month1, &day1, &year1);
 
-	for (;;)
-	{
-		printf("Enter date: (mm/dd/yy): ");
-		scanf("%d/%d/%d", &month2, &day2, &year2);
+    for (;;)
+    {
+        printf("Enter date: (mm/dd/yy): ");
+        scanf("%d/%d/%d", &month2, &day2, &year2);
 
-		if (month2 == 0 && day2 == 0 && year2 == 0) break;
+        if (month2 == 0 && day2 == 0 && year2 == 0) break;
 
-		if (year1 == year2)
-		{
-			if (month1 == month2)
-			{
-				if (day1 > day2)
-				{
-					month1 = month2;
-					day1 = day2;
-					year1 = year2;
-				}
-			}
-			else if (month1 > month2)
-			{
-				month1 = month2;
-				day1 = day2;
-				year1 = year2;
-			}
-		}
-		else if (year1 > year2)
-		{
-			month1 = month2;
-			day1 = day2;
-			year1 = year2;
-		}
-	} 
+        if (year1 == year2)
+        {
+            if (month1 == month2)
+            {
+                if (day1 > day2)
+                {
+                    month1 = month2;
+                    day1 = day2;
+                    year1 = year2;
+                }
+            }
+            else if (month1 > month2)
+            {
+                month1 = month2;
+                day1 = day2;
+                year1 = year2;
+            }
+        }
+        else if (year1 > year2)
+        {
+            month1 = month2;
+            day1 = day2;
+            year1 = year2;
+        }
+    } 
 
-	printf("%d/%d/%.2d is the earliest date",
-		month1, day1, year1);
+    printf("%d/%d/%.2d is the earliest date",
+            month1, day1, year1);
 
-	return 0;
+    return 0;
 }

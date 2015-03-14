@@ -6,22 +6,22 @@
 
 int main(void)
 {
-	int n, m;
+    int n, m;
 
-	m = 100;
-	for (n = 0; m > 0; n++)
-	{
-		printf("%d ", m);
-		m /= 2;
-	}
+    m = 100;
+    for (n = 0; m > 0; n++)
+    {
+        printf("%d ", m);
+        m /= 2;
+    }
 
-	printf("\n");
-	
-	m = 100;
-	for (n = 0; m > 0; m /= 2, n++)
-		printf("%d ", m);
+    printf("\n");
 
-	return 0;
+    m = 100;
+    for (n = 0; m > 0; m /= 2, n++)
+        printf("%d ", m);
+
+    return 0;
 }
 
 /* Answer:

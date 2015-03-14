@@ -1,4 +1,5 @@
-If c is a variable of type char, which one of the following statements is illegal?
+If c is a variable of type char, which one of the following statements is
+illegal?
 
 (a) i += c; /* i has type int */
 (b) c = 2 * c - 1;
@@ -6,4 +7,5 @@ If c is a variable of type char, which one of the following statements is illega
 (d) printf(c);
 
 Answer:
-D is illegal because characters are interpreted as constants. Printf requires a string, not a constant.
+D is illegal because characters are interpreted as constants. Printf requires
+a string, not a constant.

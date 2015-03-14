@@ -10,30 +10,30 @@
 
 int main(void)
 {
-	float a, b, c;
-	float x, y, z;
+    float a, b, c;
+    float x, y, z;
 
-	/*scanf("%d", &a);*/
-	/*printf("a1: %d\n", a);*/
-	/*scanf(" %d", &b);*/
-	/*printf("a2: %d\n", b);*/
+    /*scanf("%d", &a);*/
+    /*printf("a1: %d\n", a);*/
+    /*scanf(" %d", &b);*/
+    /*printf("a2: %d\n", b);*/
 
-	/*scanf("%d-%d-%d", &a, &b, &c);*/
-	/*printf("b1: %d, %d, %d\n", a, b, c);*/
-	/*scanf("%d -%d -%d", &x, &y, &z);*/
-	/*printf("b2: %d, %d, %d\n", x, y, z);*/
+    /*scanf("%d-%d-%d", &a, &b, &c);*/
+    /*printf("b1: %d, %d, %d\n", a, b, c);*/
+    /*scanf("%d -%d -%d", &x, &y, &z);*/
+    /*printf("b2: %d, %d, %d\n", x, y, z);*/
 
-	/*scanf("%f", &a);*/
-	/*printf("c1: %f\n", a);*/
-	/*scanf("%f ", &b);*/
-	/*printf("c2: %f\n", b);*/
+    /*scanf("%f", &a);*/
+    /*printf("c1: %f\n", a);*/
+    /*scanf("%f ", &b);*/
+    /*printf("c2: %f\n", b);*/
 
-	scanf("%f,%f", &a, &b);
-	printf("d1: %f, %f\n", a, b);
-	scanf("%f, %f", &x, &y);
-	printf("d2: %f, %f\n", x, y);
+    scanf("%f,%f", &a, &b);
+    printf("d1: %f, %f\n", a, b);
+    scanf("%f, %f", &x, &y);
+    printf("d2: %f, %f\n", x, y);
 
-	return 0;
+    return 0;
 }
 
 /* Answer:

@@ -5,19 +5,19 @@
 
 int main(void)
 {
-	int i = 1;
-	printf("during ++i: %d\n", ++i);
-	printf("after ++i: %d\n\n", i);
+    int i = 1;
+    printf("during ++i: %d\n", ++i);
+    printf("after ++i: %d\n\n", i);
 
-	i = 1;
-	printf("during (i += 1): %d\n", (i += 1));
-	printf("after (i += 1): %d\n\n", i);
+    i = 1;
+    printf("during (i += 1): %d\n", (i += 1));
+    printf("after (i += 1): %d\n\n", i);
 
-	i = 1;
-	printf("during i++: %d\n", i++);
-	printf("after i++: %d\n\n", i);
+    i = 1;
+    printf("during i++: %d\n", i++);
+    printf("after i++: %d\n\n", i);
 
-	return 0;
+    return 0;
 }
 /* Answer:
  * ++i is exactly the same as (i += 1) because they both immediately modify i

@@ -8,21 +8,21 @@
 
 int main(void)
 {
-	char input;
-	int vowels = 0;
+    char input;
+    int vowels = 0;
 
-	printf("Enter a sentence: ");
+    printf("Enter a sentence: ");
 
-	while ((input = getchar()) != '\n')
-	{
-		switch (toupper(input))
-		{
-			case 'A': case 'E': case 'I': case 'O': case 'U':
-				vowels++;
-		}
-	}
+    while ((input = getchar()) != '\n')
+    {
+        switch (toupper(input))
+        {
+            case 'A': case 'E': case 'I': case 'O': case 'U':
+                vowels++;
+        }
+    }
 
-	printf("Your sentence contains %d vowels.\n", vowels);
+    printf("Your sentence contains %d vowels.\n", vowels);
 
-	return 0;
+    return 0;
 }

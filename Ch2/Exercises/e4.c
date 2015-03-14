@@ -6,20 +6,20 @@
 
 int main(void)
 {
-	int a, b, c, d;
-	float e, g, h, f;
+    int a, b, c, d;
+    float e, g, h, f;
 
-	printf("int a: %d\n", a);
-	printf("int b: %d\n", b);
-	printf("int c: %d\n", c);
-	printf("int d: %d\n", d);
+    printf("int a: %d\n", a);
+    printf("int b: %d\n", b);
+    printf("int c: %d\n", c);
+    printf("int d: %d\n", d);
 
-	printf("float e: %.20f\n", e);
-	printf("float f: %.20f\n", f);
-	printf("float g: %.20f\n", g);
-	printf("float h: %.20f\n", h);
+    printf("float e: %.20f\n", e);
+    printf("float f: %.20f\n", f);
+    printf("float g: %.20f\n", g);
+    printf("float h: %.20f\n", h);
 
-	return 0;
+    return 0;
 }
 
 /* Answer:

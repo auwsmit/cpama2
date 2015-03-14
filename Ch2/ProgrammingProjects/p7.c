@@ -6,22 +6,22 @@
 
 int main(void)
 {
-	int dollars, twenties, tens, fives;
+    int dollars, twenties, tens, fives;
 
-	printf("Enter a dollar amount: ");
-	scanf("%d", &dollars);
+    printf("Enter a dollar amount: ");
+    scanf("%d", &dollars);
 
-	twenties = dollars / 20;
-	dollars  = dollars - (twenties * 20);
-	tens     = dollars / 10;
-	dollars  = dollars - (tens * 10);
-	fives    = dollars / 5;
-	/* dollars contains the remaining singles at this point */
+    twenties = dollars / 20;
+    dollars  = dollars - (twenties * 20);
+    tens     = dollars / 10;
+    dollars  = dollars - (tens * 10);
+    fives    = dollars / 5;
+    /* dollars contains the remaining singles at this point */
 
-	printf("\n$20 bills: %d", twenties);
-	printf("\n$10 bills: %d", tens);
-	printf("\n $5 bills: %d", fives);
-	printf("\n $1 bills: %d", dollars);
+    printf("\n$20 bills: %d", twenties);
+    printf("\n$10 bills: %d", tens);
+    printf("\n $5 bills: %d", fives);
+    printf("\n $1 bills: %d", dollars);
 
-	return 0;
+    return 0;
 }

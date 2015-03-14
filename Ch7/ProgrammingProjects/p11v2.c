@@ -13,20 +13,20 @@
 
 int main(void)
 {
-	char first_name_letter, input;
+    char first_name_letter, input;
 
-	printf("Enter a first and last name: ");
-	scanf(" %c", &first_name_letter);
+    printf("Enter a first and last name: ");
+    scanf(" %c", &first_name_letter);
 
-	while (getchar() != ' ');
+    while (getchar() != ' ');
 
-	while ((input = getchar()) != '\n')
-	{
-		if (input != ' ')
-			putchar(input);
-	}
+    while ((input = getchar()) != '\n')
+    {
+        if (input != ' ')
+            putchar(input);
+    }
 
-	printf(", %c.\n", first_name_letter);
+    printf(", %c.\n", first_name_letter);
 
-	return 0;
+    return 0;
 }

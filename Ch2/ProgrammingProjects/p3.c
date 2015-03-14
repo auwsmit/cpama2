@@ -7,13 +7,13 @@
 
 int main(void)
 {
-	int radius;
+    int radius;
 
-	printf("Enter the radius of a sphere: ");
-	scanf("%d", &radius);
+    printf("Enter the radius of a sphere: ");
+    scanf("%d", &radius);
 
-	printf("The volume of a %d-meter sphere is: %.2f\n",
-		radius, (4.0f/3.0f) * NUM_PIE * (radius * radius * radius));
+    printf("The volume of a %d-meter sphere is: %.2f\n",
+            radius, (4.0f/3.0f) * NUM_PIE * (radius * radius * radius));
 
-	return 0;
+    return 0;
 }

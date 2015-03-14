@@ -11,13 +11,13 @@
 
 int main(void)
 {
-	int i, j;
-	float x;
+    int i, j;
+    float x;
 
-	scanf("%d%f%d", &i, &x, &j);
-	printf("i: %d, x: %f, j: %d", i, x, j);
+    scanf("%d%f%d", &i, &x, &j);
+    printf("i: %d, x: %f, j: %d", i, x, j);
 
-	return 0;
+    return 0;
 }
 
 /* Answer: (note: I did figure the answer out on my own first,

@@ -6,7 +6,6 @@ Repeat Exercise 7, but give the equivalent hexadecimal escape.
 (d) \t
 
 Answer:
-
 A - \x08
 B - \x0a
 C - \x0d

@@ -1,4 +1,5 @@
-/* Which one of the following is not a legal way to write the number 65? (Assume the character set is ASCII.)
+/* Which one of the following is not a legal way to write the number 65?
+ * (Assume the character set is ASCII.)
  * (a) 'A'
  * (b) 0b1000001
  * (c) 0101
@@ -8,17 +9,17 @@
 
 int main(void)
 {
-	int a = 'A';
-	int b = 0b1000001;
-	int c = 0101;
-	int d = 0x41;
+    int a = 'A';
+    int b = 0b1000001;
+    int c = 0101;
+    int d = 0x41;
 
-	printf("A: %d\n", a);
-	printf("B: %d\n", b);
-	printf("C: %d\n", c);
-	printf("D: %d\n", d);
+    printf("A: %d\n", a);
+    printf("B: %d\n", b);
+    printf("C: %d\n", c);
+    printf("D: %d\n", d);
 
-	return 0;
+    return 0;
 }
 
 /* Answer:

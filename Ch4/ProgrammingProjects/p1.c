@@ -1,7 +1,7 @@
 /* Write a program that asks the user to enter a two-digit number, then prints
  * the number with its digits reversed. A session with the program should have
  * the following:
- * 
+ *
  * Enter a two-digit number: 28
  * The reversal is: 82
  *
@@ -13,15 +13,15 @@
 
 int main(void)
 {
-	int number, digit1, digit2;
+    int number, digit1, digit2;
 
-	printf("Enter a two-digit number: ");
-	scanf("%d", &number);
+    printf("Enter a two-digit number: ");
+    scanf("%d", &number);
 
-	digit1 = number / 10;
-	digit2 = number % 10;
+    digit1 = number / 10;
+    digit2 = number % 10;
 
-	printf("The reversal is: %d%d", digit2, digit1);
+    printf("The reversal is: %d%d", digit2, digit1);
 
-	return 0;
+    return 0;
 }

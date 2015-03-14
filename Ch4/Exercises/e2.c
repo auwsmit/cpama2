@@ -5,14 +5,14 @@
 
 int main(void)
 {
-	int i = 12;
-	int j = 5;
+    int i = 12;
+    int j = 5;
 
-	printf("i is %d and j is %d\n", i, j);
-	printf("(-i)/j = %d\n", (-i)/j);
-	printf("-(i/j) = %d\n", -(i/j));
+    printf("i is %d and j is %d\n", i, j);
+    printf("(-i)/j = %d\n", (-i)/j);
+    printf("-(i/j) = %d\n", -(i/j));
 
-	return 0;
+    return 0;
 }
 
 /* Answer:

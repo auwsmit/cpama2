@@ -1,7 +1,10 @@
-Whick one of the following statements is not equivalent to the other two (assuming that the loop bodies are the same?)
+Whick one of the following statements is not equivalent to the other two
+(assuming that the loop bodies are the same?)
 
 (a) while (i < 10) {...}
 (b) for (; i < 10;) {...}
 (c) do {...} while (i < 10);
 
-Answer: C, because unlike A and B, it executes whatever statements are under it before doing the first check.
+Answer:
+C, because unlike A and B, it executes whatever statements are under it
+before doing the first check.

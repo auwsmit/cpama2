@@ -14,15 +14,15 @@
 
 int main(void)
 {
-	int age;
+    int age;
 
-	printf("Input age: ");
-	scanf("%d", &age);
+    printf("Input age: ");
+    scanf("%d", &age);
 
-	printf(age >= 13 && age <= 19 ? "Is" : "Isn't");
-	printf(" a teenager.\n");
+    printf(age >= 13 && age <= 19 ? "Is" : "Isn't");
+    printf(" a teenager.\n");
 
-	return 0;
+    return 0;
 }
 
 /* Answer:

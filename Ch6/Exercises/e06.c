@@ -1,24 +1,25 @@
 /* Translate the program fragment of Exercise 1 into a single for statement */
+
 #include <stdio.h>
 
 int main(void)
 {
-	int i;
+    int i;
 
-	/* original while loop */
-	i = 1;
-	while (i <= 128)
-	{
-		printf("%d ", i);
-		i *= 2;
-	}
+    /* original while loop */
+    i = 1;
+    while (i <= 128)
+    {
+        printf("%d ", i);
+        i *= 2;
+    }
 
-	printf("\n\n");
+    printf("\n\n");
 
-	/* new for loop */
-	for (i = 1; i <= 128; i *= 2) printf("%d ", i);
+    /* new for loop */
+    for (i = 1; i <= 128; i *= 2) printf("%d ", i);
 
-	return 0;
+    return 0;
 }
 
 /* Answer:

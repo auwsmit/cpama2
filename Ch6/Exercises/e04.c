@@ -8,21 +8,21 @@
 
 int main(void)
 {
-	int i;
+    int i;
 
-	printf("A: ");
-	for (i = 0; i < 10; i++)
-		printf("\ni = %d", i);
+    printf("A: ");
+    for (i = 0; i < 10; i++)
+        printf("\ni = %d", i);
 
-	printf("\nB: ");
-	for (i = 0; i < 10; ++i)
-		printf("\ni = %d", i);
+    printf("\nB: ");
+    for (i = 0; i < 10; ++i)
+        printf("\ni = %d", i);
 
-	printf("\nC: ");
-	for (i = 0; i++ < 10; )
-		printf("\ni = %d", i);
+    printf("\nC: ");
+    for (i = 0; i++ < 10; )
+        printf("\ni = %d", i);
 
-	return 0;
+    return 0;
 }
 
 /* Answer: C */

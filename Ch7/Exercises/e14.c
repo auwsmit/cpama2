@@ -9,15 +9,15 @@
 
 int main(void)
 {
-	float f, fract_part;
+    float f, fract_part;
 
-	printf("Enter a fractional number (e.g. 1.55): ");
-	scanf("%f", &f);
+    printf("Enter a fractional number (e.g. 1.55): ");
+    scanf("%f", &f);
 
-	fract_part = f - (int) f;
-	printf("Fractional part: %f\n", fract_part);
+    fract_part = f - (int) f;
+    printf("Fractional part: %f\n", fract_part);
 
-	return 0;
+    return 0;
 }
 
 /* Answer:

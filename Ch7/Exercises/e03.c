@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	short unsigned int a;
-	/* short float b; */
-	long double c;
-	unsigned long d;
+    short unsigned int a;
+    /* short float b; */
+    long double c;
+    unsigned long d;
 
-	return 0;
+    return 0;
 }
 
 /* Answer:

@@ -7,11 +7,11 @@
 
 int main(void)
 {
-	printf("A: %d\n", 077);
-	printf("B: %d\n", 0x77);
-	printf("C: %d\n", 0XABC);
-	printf("\n");
-	return 0;
+    printf("A: %d\n", 077);
+    printf("B: %d\n", 0x77);
+    printf("C: %d\n", 0XABC);
+    printf("\n");
+    return 0;
 }
 
 /* Answer:

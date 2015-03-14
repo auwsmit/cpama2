@@ -11,18 +11,18 @@
 
 int main(void)
 {
-	short i, n;
+    short i, n;
 
-	printf("This program prints a table of squares.\n");
-	printf("Enter the number of entries in a table: ");
-	scanf("%hd", &n);
+    printf("This program prints a table of squares.\n");
+    printf("Enter the number of entries in a table: ");
+    scanf("%hd", &n);
 
-	for (i = 1; i <= n; i++)
-	{
-		printf("%10hd %10hd\n", i, i * i);
-	}
+    for (i = 1; i <= n; i++)
+    {
+        printf("%10hd %10hd\n", i, i * i);
+    }
 
-	return 0;
+    return 0;
 }
 
 /* Answer:

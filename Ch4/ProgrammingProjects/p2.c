@@ -4,16 +4,16 @@
 
 int main(void)
 {
-	int number, digit1, digit2, digit3;
+    int number, digit1, digit2, digit3;
 
-	printf("Enter a three-digit number: ");
-	scanf("%d", &number);
+    printf("Enter a three-digit number: ");
+    scanf("%d", &number);
 
-	digit1 = number / 100;
-	digit2 = (number / 10) % 10;
-	digit3 = number % 10;
+    digit1 = number / 100;
+    digit2 = (number / 10) % 10;
+    digit3 = number % 10;
 
-	printf("The reversal is: %d%d%d", digit3, digit2, digit1);
+    printf("The reversal is: %d%d%d", digit3, digit2, digit1);
 
-	return 0;
+    return 0;
 }

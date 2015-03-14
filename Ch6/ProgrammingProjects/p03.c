@@ -12,25 +12,25 @@
 
 int main(void)
 {
-	int m, n, remainder, m_reduced, n_reduced;
+    int m, n, remainder, m_reduced, n_reduced;
 
-	printf("Enter a fraction: ");
-	scanf("%d/%d", &m, &n);
+    printf("Enter a fraction: ");
+    scanf("%d/%d", &m, &n);
 
-	m_reduced = m;
-	n_reduced = n;
+    m_reduced = m;
+    n_reduced = n;
 
-	do
-	{
-		remainder = m % n;
-		m = n;
-		n = remainder;
-	} while (n != 0);
+    do
+    {
+        remainder = m % n;
+        m = n;
+        n = remainder;
+    } while (n != 0);
 
-	m_reduced /= m;
-	n_reduced /= m;
+    m_reduced /= m;
+    n_reduced /= m;
 
-	printf("In lowest terms: %d/%d", m_reduced, n_reduced);
+    printf("In lowest terms: %d/%d", m_reduced, n_reduced);
 
-	return 0;
+    return 0;
 }

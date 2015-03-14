@@ -8,7 +8,6 @@ has been executed.
 (d) i % ++j;
 
 Answer:
-
 (a) i is 3, j is 2
 (b) i is 0, j is 2
 (c) i is 1, j is 2

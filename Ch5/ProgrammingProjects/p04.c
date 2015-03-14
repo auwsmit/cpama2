@@ -16,37 +16,37 @@
 
 int main(void)
 {
-	float windspeed;
+    float windspeed;
 
-	printf("Enter wind speed (in knots): ");
-	scanf("%f", &windspeed);
+    printf("Enter wind speed (in knots): ");
+    scanf("%f", &windspeed);
 
-	printf("Wind Speed: ");
+    printf("Wind Speed: ");
 
-	if (windspeed < 1)
-	{
-		printf("Calm");
-	}
-	else if (windspeed >= 1 && windspeed <= 3)
-	{
-		printf("Light air");
-	}
-	else if (windspeed >= 4 && windspeed <= 27)
-	{
-		printf("Breeze");
-	}
-	else if (windspeed >= 28 && windspeed <= 47)
-	{
-		printf("Gale");
-	}
-	else if (windspeed >= 48 && windspeed <= 63)
-	{
-		printf("Storm");
-	}
-	else if (windspeed > 63)
-	{
-		printf("Hurricane");
-	}
+    if (windspeed < 1)
+    {
+        printf("Calm");
+    }
+    else if (windspeed >= 1 && windspeed <= 3)
+    {
+        printf("Light air");
+    }
+    else if (windspeed >= 4 && windspeed <= 27)
+    {
+        printf("Breeze");
+    }
+    else if (windspeed >= 28 && windspeed <= 47)
+    {
+        printf("Gale");
+    }
+    else if (windspeed >= 48 && windspeed <= 63)
+    {
+        printf("Storm");
+    }
+    else if (windspeed > 63)
+    {
+        printf("Hurricane");
+    }
 
-	return 0;
+    return 0;
 }

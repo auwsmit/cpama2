@@ -4,25 +4,25 @@
 
 int main(void)
 {
-	int i;
+    int i;
 
-	for (i = 0; i <= 10; i++)
-		if (i == 8)
-			continue;
-		else
-			printf("%d ", i);
+    for (i = 0; i <= 10; i++)
+        if (i == 8)
+            continue;
+        else
+            printf("%d ", i);
 
-	printf("\n");
+    printf("\n");
 
-	for (i = 0; i <= 10; i++)
-	{
-		if (i == 8)
-			goto end_of_loop;
-		else
-			printf("%d ", i);
+    for (i = 0; i <= 10; i++)
+    {
+        if (i == 8)
+            goto end_of_loop;
+        else
+            printf("%d ", i);
 
-		end_of_loop:;
-	}
+        end_of_loop:;
+    }
 
-	return 0;
+    return 0;
 }

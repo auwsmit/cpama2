@@ -6,18 +6,18 @@
 
 int main(void)
 {
-	int i, n, odd, square;
+    int i, n, odd, square;
 
-	printf("This program prints a table of squares.\n");
-	printf("Enter the number of entries in a table: ");
-	scanf("%d", &n);
+    printf("This program prints a table of squares.\n");
+    printf("Enter the number of entries in a table: ");
+    scanf("%d", &n);
 
-	odd = 3;
-	for (square = 1, i = 1; i <= n; odd += 2, i++)
-	{
-		printf("%10d%10d\n", i, i * i);
-		square += odd;
-	}
+    odd = 3;
+    for (square = 1, i = 1; i <= n; odd += 2, i++)
+    {
+        printf("%10d%10d\n", i, i * i);
+        square += odd;
+    }
 
-	return 0;
+    return 0;
 }

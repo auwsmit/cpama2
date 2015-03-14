@@ -16,20 +16,20 @@
 
 int main(void)
 {
-	float i, n, largest;
+    float i, n, largest;
 
-	i = 1;
-	do
-	{
-		printf("Enter a number: ");
-		scanf("%f", &n);
+    i = 1;
+    do
+    {
+        printf("Enter a number: ");
+        scanf("%f", &n);
 
-		if (n == 1 || n > largest) largest = n;
+        if (n == 1 || n > largest) largest = n;
 
-		i++;
-	} while (i <= 6);
+        i++;
+    } while (i <= 6);
 
-	printf("\nThe largest number entered was %.2f", largest);
+    printf("\nThe largest number entered was %.2f", largest);
 
-	return 0;
+    return 0;
 }

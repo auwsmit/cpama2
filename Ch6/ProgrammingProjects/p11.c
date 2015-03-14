@@ -11,30 +11,30 @@
 
 int main(void)
 {
-	int precision, i;
-	float end_result, factorial, p;
+    int precision, i;
+    float end_result, factorial, p;
 
-	printf("Enter a number: ");
-	scanf("%d", &precision);
+    printf("Enter a number: ");
+    scanf("%d", &precision);
 
-	end_result = 1;
+    end_result = 1;
 
-	printf("\ne = 1");
-	for (i = 1; i <= precision; i++)
-	{
-		/* calculating the factorial */
-		factorial = p = i;
-		while (p > 0)
-		{
-			if (p - 1 == 0) break;
-			factorial *= --p;
-		}
+    printf("\ne = 1");
+    for (i = 1; i <= precision; i++)
+    {
+        /* calculating the factorial */
+        factorial = p = i;
+        while (p > 0)
+        {
+            if (p - 1 == 0) break;
+            factorial *= --p;
+        }
 
-		end_result += (1 / factorial);
-		printf(" + 1/%d!", i);
-	}
+        end_result += (1 / factorial);
+        printf(" + 1/%d!", i);
+    }
 
-	printf(" = %.4f\n", end_result);
+    printf(" = %.4f\n", end_result);
 
-	return 0;
+    return 0;
 }

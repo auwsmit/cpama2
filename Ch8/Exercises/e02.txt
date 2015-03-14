@@ -1,4 +1,7 @@
-The Q&A section shows how to use a letter as an array subscript. Describe how to use a digit (in character form) as a subscript.
+The Q&A section shows how to use a letter as an array subscript. Describe how
+to use a digit (in character form) as a subscript.
 
 Answer:
-Using a digit as an array subscript is very similar to using a letter. Instead of array[letter - 'a'] for a letter, it becomes array[digit - '0'] for digit characters.
+Using a digit as an array subscript is very similar to using a letter. Instead
+of array[letter - 'a'] for a letter, it becomes array[digit - '0'] for digit
+characters.

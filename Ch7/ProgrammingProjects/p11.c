@@ -16,28 +16,28 @@
 
 int main(void)
 {
-	char input, first_name_letter = 0;
-	int space = FALSE;
+    char input, first_name_letter = 0;
+    int space = FALSE;
 
-	printf("Enter a first and last name: ");
+    printf("Enter a first and last name: ");
 
-	while ((input = getchar()) != '\n')
-	{
-		if (!first_name_letter)
-		{
-			if (input != ' ')
-				first_name_letter = input;
-		}
-		else if (space == FALSE)
-		{
-			if (input == ' ')
-				space = 1;
-		}
-		else if (input != ' ')
-			putchar(input);
-	}
+    while ((input = getchar()) != '\n')
+    {
+        if (!first_name_letter)
+        {
+            if (input != ' ')
+                first_name_letter = input;
+        }
+        else if (space == FALSE)
+        {
+            if (input == ' ')
+                space = 1;
+        }
+        else if (input != ' ')
+            putchar(input);
+    }
 
-	printf(", %c.\n", first_name_letter);
+    printf(", %c.\n", first_name_letter);
 
-	return 0;
+    return 0;
 }

@@ -30,20 +30,20 @@
 
 int main(void)
 {
-	double x, y = 1, average;
+    double x, y = 1, average;
 
-	printf("Enter a positive number: ");
-	scanf("%lf", &x);
+    printf("Enter a positive number: ");
+    scanf("%lf", &x);
 
-	while (1)
-	{
-		average = (y + (x / y)) / 2;
-		if (fabs(y - average) > (0.00001 * y))
-			y = average;
-		else break;
-	}
+    while (1)
+    {
+        average = (y + (x / y)) / 2;
+        if (fabs(y - average) > (0.00001 * y))
+            y = average;
+        else break;
+    }
 
-	printf("Square root: %.5lf", average);
+    printf("Square root: %.5lf", average);
 
-	return 0;
+    return 0;
 }

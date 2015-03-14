@@ -8,38 +8,38 @@
 
 int main(void)
 {
-	float loan, interest, monthlyPayment;
-	int payments, i;
+    float loan, interest, monthlyPayment;
+    int payments, i;
 
-	printf("Enter the amount of loan: ");
-	scanf("%f", &loan);
-	printf("Enter interest rate: ");
-	scanf("%f", &interest);
-	printf("Enter monthly payment: ");
-	scanf("%f", &monthlyPayment);
-	printf("Enter number of payments: ");
-	scanf("%d", &payments);
+    printf("Enter the amount of loan: ");
+    scanf("%f", &loan);
+    printf("Enter interest rate: ");
+    scanf("%f", &interest);
+    printf("Enter monthly payment: ");
+    scanf("%f", &monthlyPayment);
+    printf("Enter number of payments: ");
+    scanf("%d", &payments);
 
-	/* interest is yearly, so this converts it to a monthly rate */
-	interest = (interest * 0.01f) / 12;
+    /* interest is yearly, so this converts it to a monthly rate */
+    interest = (interest * 0.01f) / 12;
 
-	for (i = 1; i <= payments; i++)
-	{
-		loan = (loan - monthlyPayment) + (loan * interest);
-		printf("\nBalance remaining after %d", i);
+    for (i = 1; i <= payments; i++)
+    {
+        loan = (loan - monthlyPayment) + (loan * interest);
+        printf("\nBalance remaining after %d", i);
 
-		if (i == 11 || i == 12 || i == 13)
-			printf("th");
-		else if (i % 10 == 1) 
-			printf("st");
-		else if (i % 10 == 2) 
-			printf("nd");
-		else if (i % 10 == 3) 
-			printf("rd");
-		else 
-			printf("th");
+        if (i == 11 || i == 12 || i == 13)
+            printf("th");
+        else if (i % 10 == 1) 
+            printf("st");
+        else if (i % 10 == 2) 
+            printf("nd");
+        else if (i % 10 == 3) 
+            printf("rd");
+        else 
+            printf("th");
 
-		printf(" payment:  $%.2f", loan);
-	}
-	return 0;
+        printf(" payment:  $%.2f", loan);
+    }
+    return 0;
 }

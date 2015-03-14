@@ -11,28 +11,28 @@
 
 int main(void)
 {
-	int characters, words;
-	char input, last_input;
+    int characters, words;
+    char input, last_input;
 
-	characters = words = last_input = 0; /* initializing to 0 */
+    characters = words = last_input = 0; /* initializing to 0 */
 
-	printf("Enter a sentence: ");
-	
-	while ((input = getchar()) != '\n')
-	{
-		if (input != ' ')
-		{
-			characters++;
-			if (words == 0)
-				words++;
-		}
-		else if (last_input != ' ')
-			words++;
+    printf("Enter a sentence: ");
 
-		last_input = input;
-	}
+    while ((input = getchar()) != '\n')
+    {
+        if (input != ' ')
+        {
+            characters++;
+            if (words == 0)
+                words++;
+        }
+        else if (last_input != ' ')
+            words++;
 
-	printf("Average word length: %.1f\n", (float) characters / words);
+        last_input = input;
+    }
 
-	return 0;
+    printf("Average word length: %.1f\n", (float) characters / words);
+
+    return 0;
 }
