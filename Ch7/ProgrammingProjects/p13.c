@@ -16,7 +16,7 @@ int main(void)
 
     characters = words = last_input = 0; /* initializing to 0 */
 
-    printf("Enter a sentence: ");
+    printf("\nEnter a sentence: ");
 
     while ((input = getchar()) != '\n')
     {
@@ -32,7 +32,7 @@ int main(void)
         last_input = input;
     }
 
-    printf("Average word length: %.1f\n", (float) characters / words);
+    printf("Average word length: %.1f\n\n", (float) characters / words);
 
     return 0;
 }

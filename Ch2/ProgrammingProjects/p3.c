@@ -9,10 +9,10 @@ int main(void)
 {
     int radius;
 
-    printf("Enter the radius of a sphere: ");
+    printf("\nEnter the radius of a sphere: ");
     scanf("%d", &radius);
 
-    printf("The volume of a %d-meter sphere is: %.2f\n",
+    printf("The volume of a %d-meter sphere is: %.2f\n\n",
             radius, (4.0f/3.0f) * NUM_PIE * (radius * radius * radius));
 
     return 0;

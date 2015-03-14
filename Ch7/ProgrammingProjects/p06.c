@@ -5,14 +5,13 @@
 
 int main(void)
 {
-    printf("Size of:\n");
-    printf("int - %d\n", sizeof(int));
-    printf("short - %d\n", sizeof(short));
-    printf("long - %d\n", sizeof(long));
-    printf("float - %d\n", sizeof(float));
-    printf("double - %d\n", sizeof(double));
-    printf("long double - %d\n", sizeof(long double));
-    printf("\n");
+    printf("\nSize of:\n");
+    printf("int - %ld\n", sizeof(int));
+    printf("short - %ld\n", sizeof(short));
+    printf("long - %ld\n", sizeof(long));
+    printf("float - %ld\n", sizeof(float));
+    printf("double - %ldn", sizeof(double));
+    printf("long double - %ld\n\n", sizeof(long double));
 
     return 0;
 }

@@ -21,7 +21,7 @@ int main(void)
 
     i = 7; j = 8;
     i *= j + 1;
-    printf("%d %d\n", i, j);
+    printf("\n%d %d\n", i, j);
     i = j = k = 1;
     i += j += k;
     printf("%d %d %d\n", i, j, k);
@@ -30,7 +30,7 @@ int main(void)
     printf("%d %d %d\n", i, j, k);
     i = 2; j = 1; k = 0;
     i *= j *= k;
-    printf("%d %d %d\n", i, j, k);
+    printf("%d %d %d\n\n", i, j, k);
 
     return 0;
 }

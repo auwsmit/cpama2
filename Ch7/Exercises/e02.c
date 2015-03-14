@@ -5,11 +5,11 @@
 
 int main(void)
 {
-    printf("A: %f\n", 010E2);
+    printf("\nA: %f\n", 010E2);
     printf("B: %f\n", 32.1E+5);
     /* printf("C: %d\n", 0790); */
     /* printf("D: %f\n", 100_000); */
-    printf("E: %f\n", 3.978e-2);
+    printf("E: %f\n\n", 3.978e-2);
 
     return 0;
 }

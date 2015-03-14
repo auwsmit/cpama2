@@ -16,7 +16,7 @@ int main(void)
 {
     int dig1, dig2;
 
-    printf("Enter a two-digit number: ");
+    printf("\nEnter a two-digit number: ");
     scanf("%1d%1d", &dig1, &dig2);
 
     printf("You entered the number ");
@@ -87,7 +87,7 @@ int main(void)
             printf("-nine"); break;
     }
 
-    printf("\n");
+    printf("\n\n");
 
     return 0;
 }

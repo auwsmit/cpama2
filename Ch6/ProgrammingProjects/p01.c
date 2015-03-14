@@ -21,7 +21,7 @@ int main(void)
     i = 1;
     do
     {
-        printf("Enter a number: ");
+        printf("\nEnter a number: ");
         scanf("%f", &n);
 
         if (n == 1 || n > largest) largest = n;
@@ -29,7 +29,7 @@ int main(void)
         i++;
     } while (i <= 6);
 
-    printf("\nThe largest number entered was %.2f", largest);
+    printf("\nThe largest number entered was %.2f\n\n", largest);
 
     return 0;
 }

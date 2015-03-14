@@ -6,7 +6,7 @@
 int main(void)
 {
     int i = 1;
-    printf("during ++i: %d\n", ++i);
+    printf("\nduring ++i: %d\n", ++i);
     printf("after ++i: %d\n\n", i);
 
     i = 1;

@@ -6,6 +6,8 @@ int main(void)
 {
     int i;
 
+    printf("\n");
+
     /* original while loop */
     i = 9384;
     do
@@ -18,6 +20,8 @@ int main(void)
 
     /* new for loop */
     for (i = 9384; i > 0; i /= 10) printf("%d ", i);
+
+    printf("\n\n");
 
     return 0;
 }

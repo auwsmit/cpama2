@@ -19,7 +19,7 @@ int main(void)
     char input, first_name_letter = 0;
     int space = FALSE;
 
-    printf("Enter a first and last name: ");
+    printf("\nEnter a first and last name: ");
 
     while ((input = getchar()) != '\n')
     {
@@ -37,7 +37,7 @@ int main(void)
             putchar(input);
     }
 
-    printf(", %c.\n", first_name_letter);
+    printf(", %c.\n\n", first_name_letter);
 
     return 0;
 }

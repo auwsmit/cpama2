@@ -17,7 +17,7 @@ int main(void)
 {
     int score;
 
-    printf("Input score (0-100): ");
+    printf("\nInput score (0-100): ");
     scanf("%d", &score);
 
     if (score >= 90)
@@ -41,6 +41,8 @@ int main(void)
         printf("B");
     else
         printf("A");
+
+    printf("\n\n");
 
     return 0;
 }

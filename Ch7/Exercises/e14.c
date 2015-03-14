@@ -11,11 +11,11 @@ int main(void)
 {
     float f, fract_part;
 
-    printf("Enter a fractional number (e.g. 1.55): ");
+    printf("\nEnter a fractional number (e.g. 1.55): ");
     scanf("%f", &f);
 
     fract_part = f - (int) f;
-    printf("Fractional part: %f\n", fract_part);
+    printf("Fractional part: %f\n\n", fract_part);
 
     return 0;
 }

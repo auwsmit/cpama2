@@ -16,7 +16,7 @@ int main(void)
 {
     int month1, day1, year1, month2, day2, year2;
 
-    printf("Enter date: (mm/dd/yy): ");
+    printf("\nEnter date: (mm/dd/yy): ");
     scanf("%d/%d/%d", &month1, &day1, &year1);
 
     for (;;)
@@ -52,7 +52,7 @@ int main(void)
         }
     } 
 
-    printf("%d/%d/%.2d is the earliest date",
+    printf("%d/%d/%.2d is the earliest date\n\n",
             month1, day1, year1);
 
     return 0;

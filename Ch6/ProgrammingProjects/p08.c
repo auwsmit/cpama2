@@ -23,7 +23,7 @@ int main(void)
 {
     int month_days, starting_day, i, day;
 
-    printf("Enter number of days in month: ");
+    printf("\nEnter number of days in month: ");
     scanf("%d", &month_days);
     printf("Enter starting day of the week (1=Sun, 7=Sat): ");
     scanf("%d", &starting_day);
@@ -45,6 +45,8 @@ int main(void)
         else
             printf("%2d ", day);
     }
+
+    printf("\n\n");
 
     return 0;
 }

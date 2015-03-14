@@ -16,6 +16,8 @@ int main(void)
 {
     float commission, value;
 
+    printf("\n");
+
     while (1)
     {
         printf("Enter value of trade: ");

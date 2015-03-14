@@ -24,7 +24,7 @@ int main(void)
 {
     int area_code;
 
-    printf("Enter area code (3 numbers): ");
+    printf("\nEnter area code (3 numbers): ");
     scanf("%d", &area_code);
 
     switch (area_code)
@@ -47,6 +47,8 @@ int main(void)
         default:
             printf("Area code not recognized");
     }
+
+    printf("\n\n");
 
     return 0;
 }

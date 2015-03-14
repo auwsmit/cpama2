@@ -19,7 +19,7 @@ int main(void)
     char ch;
     int score = 0;
 
-    printf("Enter a word: ");
+    printf("\nEnter a word: ");
 
     while ((ch = getchar()) != '\n')
     {
@@ -62,7 +62,7 @@ int main(void)
         }
     }
 
-    printf("Scrabble value: %d\n", score);
+    printf("Scrabble value: %d\n\n", score);
 
     return 0;
 }

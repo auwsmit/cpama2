@@ -13,7 +13,7 @@ int main(void)
 {
     int i1, i2, i3, i4, largest, smallest;
 
-    printf("Enter four integers: ");
+    printf("\nEnter four integers: ");
     scanf("%d %d %d %d", &i1, &i2, &i3, &i4);
 
     largest = smallest = i1;
@@ -32,7 +32,7 @@ int main(void)
     if (smallest > i4)
         smallest = i4;
 
-    printf("Largest: %d\nSmallest: %d", largest, smallest);
+    printf("Largest: %d\nSmallest: %d\n\n", largest, smallest);
 
     return 0;
 }

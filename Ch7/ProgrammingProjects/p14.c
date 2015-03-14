@@ -32,7 +32,7 @@ int main(void)
 {
     double x, y = 1, average;
 
-    printf("Enter a positive number: ");
+    printf("\nEnter a positive number: ");
     scanf("%lf", &x);
 
     while (1)
@@ -43,7 +43,7 @@ int main(void)
         else break;
     }
 
-    printf("Square root: %.5lf", average);
+    printf("Square root: %.5lf\n\n", average);
 
     return 0;
 }

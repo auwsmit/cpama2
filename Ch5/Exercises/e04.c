@@ -8,10 +8,10 @@ int main(void)
 {
     int i, j;
 
-    printf("Values for i and j (e.g. 22 6): ");
+    printf("\nValues for i and j (e.g. 22 6): ");
     scanf("%d %d", &i, &j);
 
-    printf("Expression: %d", !(i == j) * (i < j ? -1 : 1));
+    printf("Expression: %d\n\n", !(i == j) * (i < j ? -1 : 1));
 
     return 0;
 }

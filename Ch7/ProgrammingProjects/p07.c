@@ -9,7 +9,7 @@ int main(void)
     int num1, denom1, num2, denom2, result_num, result_denom;
     char sign;
 
-    printf("Enter two fractions separated by a +, -, *, or /: ");
+    printf("\nEnter two fractions separated by a +, -, *, or /: ");
     scanf("%d/%d %c %d/%d", &num1, &denom1, &sign, &num2, &denom2);
 
     switch (sign)
@@ -43,7 +43,7 @@ int main(void)
             return 0;
     }
 
-    printf("%d/%d\n", result_num, result_denom);
+    printf("%d/%d\n\n", result_num, result_denom);
 
     return 0;
 }

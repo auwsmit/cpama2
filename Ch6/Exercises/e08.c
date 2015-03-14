@@ -8,8 +8,12 @@ int main(void)
 {
     int i;
 
+    printf("\n");
+
     for (i = 10; i >= 1; i /= 2)
         printf("%d ", i++);
+
+    printf("\n\n");
 
     return 0;
 }

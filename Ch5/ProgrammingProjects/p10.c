@@ -15,7 +15,7 @@ int main(void)
 {
     int grade;
 
-    printf("Enter a numerical grade: ");
+    printf("\nEnter a numerical grade: ");
     scanf("%d", &grade);
 
     if (grade < 0 || grade > 100)
@@ -51,7 +51,7 @@ int main(void)
             printf("Error: No grades above 100 or below 0.");
     }
 
-    printf("\n");
+    printf("\n\n");
 
     return 0;
 }

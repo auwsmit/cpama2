@@ -16,7 +16,7 @@ int main(void)
 {
     int m, n, remainder;
 
-    printf("Enter two integers: ");
+    printf("\nEnter two integers: ");
     scanf("%d %d", &m, &n);
 
     do
@@ -26,7 +26,7 @@ int main(void)
         n = remainder;
     } while (n != 0);
 
-    printf("Greatest common divisor: %d", m);
+    printf("Greatest common divisor: %d\n\n", m);
 
     return 0;
 }

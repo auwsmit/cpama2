@@ -12,7 +12,7 @@ int main(void)
 {
     int hours24, hours12, minutes;
 
-    printf("Enter a 24-hour time: ");
+    printf("\nEnter a 24-hour time: ");
     scanf("%d:%d", &hours24, &minutes);
 
     if (hours24 > 12 && hours24 <= 24)
@@ -28,6 +28,8 @@ int main(void)
         printf("PM");
     else
         printf("AM");
+
+    printf("\n\n");
 
     return 0;
 }

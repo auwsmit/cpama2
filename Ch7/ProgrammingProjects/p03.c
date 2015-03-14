@@ -7,7 +7,7 @@ int main(void)
 {
     double n, sum = 0;
 
-    printf("This program sums a series of doubles.\n");
+    printf("\nThis program sums a series of doubles.\n");
     printf("Enter doubles (0 to terminate): ");
 
     scanf("%lf", &n);
@@ -16,7 +16,7 @@ int main(void)
         sum += n;
         scanf("%lf", &n);
     }
-    printf("The sum is: %.3lf\n", sum);
+    printf("The sum is: %.3lf\n\n", sum);
 
     return 0;
 }

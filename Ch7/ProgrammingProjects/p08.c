@@ -27,7 +27,7 @@ int main(void)
 
     char am_pm;
 
-    printf("Enter a 24-hour time: ");
+    printf("\nEnter a 24-hour time: ");
     scanf("%d:%d %c", &input_h, &input_m, &am_pm);
 
     switch (toupper(am_pm))
@@ -118,7 +118,7 @@ int main(void)
             printf("9:45 p.m., arriving at 11:58 p.m.");
     }
 
-    printf("\n");
+    printf("\n\n");
 
     return 0;
 }

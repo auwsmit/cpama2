@@ -15,13 +15,13 @@ int main(void)
 {
     float x;
 
-    printf("Please enter a value for x: ");
+    printf("\nPlease enter a value for x: ");
     scanf("%f", &x);
 
-    printf("a|%-8.1ea|\n", x);
+    printf("a|%-8.1e|\n", x);
     printf("b|%10.6e|\n", x);
-    printf("c|%-8.3d|\n", x);
-    printf("d|%6d|\n", x);
+    printf("c|%-8.3f|\n", x);
+    printf("d|%6f|\n\n", x);
 
     return 0;
 }

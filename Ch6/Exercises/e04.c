@@ -10,7 +10,7 @@ int main(void)
 {
     int i;
 
-    printf("A: ");
+    printf("\nA: ");
     for (i = 0; i < 10; i++)
         printf("\ni = %d", i);
 
@@ -21,6 +21,8 @@ int main(void)
     printf("\nC: ");
     for (i = 0; i++ < 10; )
         printf("\ni = %d", i);
+
+    printf("\n\n");
 
     return 0;
 }

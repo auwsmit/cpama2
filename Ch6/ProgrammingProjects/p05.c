@@ -9,7 +9,7 @@ int main(void)
 {
     int number;
 
-    printf("Enter a number: ");
+    printf("\nEnter a number: ");
     scanf("%d", &number);
 
     printf("The reversal is: ");
@@ -18,6 +18,8 @@ int main(void)
         printf("%d", number % 10);
         number = number/10;
     } while (number != 0);
+
+    printf("\n\n");
 
     return 0;
 }

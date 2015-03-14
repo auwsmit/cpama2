@@ -6,10 +6,10 @@
 int main(void)
 {
     int i = 17;
-    printf("%d\n", i >= 0 ? i : -i);
+    printf("\n%d\n", i >= 0 ? i : -i);
 
     i = -17;
-    printf("%d", i >= 0 ? i : -i);
+    printf("%d\n\n", i >= 0 ? i : -i);
 
     return 0;
 }

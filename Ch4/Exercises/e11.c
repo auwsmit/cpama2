@@ -20,7 +20,7 @@ int main(void)
     int i, j, k;
 
     i = 1;
-    printf("%d ", i++ - 1);
+    printf("\n%d ", i++ - 1);
     printf("%d\n", i);
     i = 10; j = 5;
     printf("%d ", i++ - ++j);
@@ -30,7 +30,7 @@ int main(void)
     printf("%d %d\n", i, j);
     i = 3; j = 4; k = 5;
     printf("%d ", i++ - j++ + --k);
-    printf("%d %d %d\n", i, j, k);
+    printf("%d %d %d\n\n", i, j, k);
 
     return 0;
 }

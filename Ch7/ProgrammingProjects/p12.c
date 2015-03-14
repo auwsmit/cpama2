@@ -16,7 +16,7 @@ int main(void)
 
     valueA = valueB = valueC = 0;
 
-    printf("Enter an expression: ");
+    printf("\nEnter an expression: ");
     scanf(" %f %c %f %c %f",
             &valueA, &operator1, &valueB, &operator2, &valueC);
 
@@ -58,7 +58,7 @@ int main(void)
             return 0;
     }
 
-    printf("Value of an expression: %.1f", valueA);
+    printf("Value of an expression: %.1f\n\n", valueA);
 
     return 0;
 }

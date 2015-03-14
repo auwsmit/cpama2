@@ -30,7 +30,7 @@ int main(void)
     int input_h, input_m, t8_00am, t9_43am, t11_19am,
         t12_47pm, t2_00pm, t3_45pm, t7_00pm, t9_45pm, tmidnight;
 
-    printf("Enter a 24-hour time: ");
+    printf("\nEnter a 24-hour time: ");
     scanf("%d:%d", &input_h, &input_m);
 
     input_m = input_h * 60 + input_m;
@@ -108,6 +108,8 @@ int main(void)
         if (input_m >= t9_45pm && input_m < tmidnight)
             printf("9:45 p.m., arriving at 11:58 p.m.");
     }
+
+    printf("\n\n");
 
     return 0;
 }

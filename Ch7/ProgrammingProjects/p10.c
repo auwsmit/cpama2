@@ -11,7 +11,7 @@ int main(void)
     char input;
     int vowels = 0;
 
-    printf("Enter a sentence: ");
+    printf("\nEnter a sentence: ");
 
     while ((input = getchar()) != '\n')
     {
@@ -22,7 +22,7 @@ int main(void)
         }
     }
 
-    printf("Your sentence contains %d vowels.\n", vowels);
+    printf("Your sentence contains %d vowels.\n\n", vowels);
 
     return 0;
 }

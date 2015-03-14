@@ -8,7 +8,7 @@ int main(void)
 {
     int i, n, odd, square;
 
-    printf("This program prints a table of squares.\n");
+    printf("\nThis program prints a table of squares.\n");
     printf("Enter the number of entries in a table: ");
     scanf("%d", &n);
 
@@ -18,6 +18,8 @@ int main(void)
         printf("%10d%10d\n", i, i * i);
         square += odd;
     }
+
+    printf("\n");
 
     return 0;
 }

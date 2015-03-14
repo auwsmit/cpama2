@@ -7,12 +7,16 @@ int main(void)
 {
     int i;
 
+    printf("\n");
+
     i = 10;
     while (i >= 1)
     {
         printf("%d ", i++);
         i /= 2;
     }
+
+    printf("\n\n");
 
     return 0;
 }

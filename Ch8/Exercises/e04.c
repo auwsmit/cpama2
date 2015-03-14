@@ -11,7 +11,7 @@ int main(void)
 
     for (i = 0; i < 7; i++)
         printf("\nDay %d: Weekend %d", i + 1, weekend[i]);
-    printf("\n");
+    printf("\n\n");
 
     return 0;
 }

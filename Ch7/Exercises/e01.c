@@ -7,10 +7,9 @@
 
 int main(void)
 {
-    printf("A: %d\n", 077);
+    printf("\nA: %d\n", 077);
     printf("B: %d\n", 0x77);
-    printf("C: %d\n", 0XABC);
-    printf("\n");
+    printf("C: %d\n\n", 0XABC);
     return 0;
 }
 

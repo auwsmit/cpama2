@@ -6,7 +6,7 @@ int main(void)
 {
     int prefix, identifier, publisher, itemNum, check;
 
-    printf("Enter ISBN: ");
+    printf("\nEnter ISBN: ");
     scanf("%d-%d-%d-%d-%d",
           &prefix, &identifier, &publisher, &itemNum, &check);
 
@@ -14,7 +14,7 @@ int main(void)
     printf("Group identifier: %d\n", identifier);
     printf("Publisher code: %d\n", publisher);
     printf("Item number: %d\n", itemNum);
-    printf("Check digit: %d\n", check);
+    printf("Check digit: %d\n\n", check);
 
     return 0;
 }

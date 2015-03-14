@@ -17,7 +17,7 @@ int main(void)
 {
     float income, tax;
 
-    printf("Enter amount of income: ");
+    printf("\nEnter amount of income: ");
     scanf("%f", &income);
 
     if (income < 750)
@@ -45,7 +45,7 @@ int main(void)
         tax = 230.50 + ((income - 7000) * 0.02);
     }
 
-    printf("Tax due: $%.2f", tax);
+    printf("Tax due: $%.2f\n\n", tax);
 
     return 0;
 }

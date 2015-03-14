@@ -14,7 +14,7 @@ int main(void)
 {
     int m, n, remainder, m_reduced, n_reduced;
 
-    printf("Enter a fraction: ");
+    printf("\nEnter a fraction: ");
     scanf("%d/%d", &m, &n);
 
     m_reduced = m;
@@ -30,7 +30,7 @@ int main(void)
     m_reduced /= m;
     n_reduced /= m;
 
-    printf("In lowest terms: %d/%d", m_reduced, n_reduced);
+    printf("In lowest terms: %d/%d\n\n", m_reduced, n_reduced);
 
     return 0;
 }

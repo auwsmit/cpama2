@@ -14,10 +14,10 @@ int main(void)
     int c = 0101;
     int d = 0x41;
 
-    printf("A: %d\n", a);
+    printf("\nA: %d\n", a);
     printf("B: %d\n", b);
     printf("C: %d\n", c);
-    printf("D: %d\n", d);
+    printf("D: %d\n\n", d);
 
     return 0;
 }

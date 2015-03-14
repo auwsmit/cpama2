@@ -18,7 +18,7 @@ int main(void)
 {
     float windspeed;
 
-    printf("Enter wind speed (in knots): ");
+    printf("\nEnter wind speed (in knots): ");
     scanf("%f", &windspeed);
 
     printf("Wind Speed: ");
@@ -47,6 +47,8 @@ int main(void)
     {
         printf("Hurricane");
     }
+
+    printf("\n\n");
 
     return 0;
 }

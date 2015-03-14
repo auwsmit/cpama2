@@ -8,9 +8,9 @@ int main(void)
     int i = 12;
     int j = 5;
 
-    printf("i is %d and j is %d\n", i, j);
+    printf("\ni is %d and j is %d\n", i, j);
     printf("(-i)/j = %d\n", (-i)/j);
-    printf("-(i/j) = %d\n", -(i/j));
+    printf("-(i/j) = %d\n\n", -(i/j));
 
     return 0;
 }

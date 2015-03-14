@@ -6,9 +6,9 @@
 
 int main(void)
 {
-    printf("Parkinson's Law:\nWork expands as to ");
+    printf("\nParkinson's Law:\nWork expands as to ");
     printf("fill the time\n");
-    printf("available for its completion.\n");
+    printf("available for its completion.\n\n");
     return 0;
 }
 

@@ -21,7 +21,7 @@ int main(void)
 {
     char ch;
 
-    printf("Enter phone number: ");
+    printf("\nEnter phone number: ");
 
     while ((ch = getchar()) != '\n')
     {
@@ -56,7 +56,7 @@ int main(void)
         }
     }
 
-    printf("\n");
+    printf("\n\n");
 
     return 0;
 }

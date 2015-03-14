@@ -10,7 +10,7 @@ int main(void)
     int itemNum, month, day, year;
     float unitPrice;
 
-    printf("Enter item number: ");
+    printf("\nEnter item number: ");
     scanf("%d", &itemNum);
 
     printf("Enter unit price: ");
@@ -22,7 +22,7 @@ int main(void)
     printf("\nItem\t\tUnit\t\tPurchase\n");
     printf("\t\tPrice\t\tDate\n");
     printf("%d\t\t$%7.2f\t", itemNum, unitPrice);
-    printf("%.2d/%.2d/%.4d", month, day, year);
+    printf("%.2d/%.2d/%.4d\n", month, day, year);
 
     return 0;
 }

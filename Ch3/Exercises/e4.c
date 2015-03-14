@@ -15,7 +15,7 @@ int main(void)
     float x;
 
     scanf("%d%f%d", &i, &x, &j);
-    printf("i: %d, x: %f, j: %d", i, x, j);
+    printf("\ni: %d, x: %f, j: %d\n\n", i, x, j);
 
     return 0;
 }

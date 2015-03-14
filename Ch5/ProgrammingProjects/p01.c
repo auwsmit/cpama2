@@ -15,7 +15,7 @@ int main(void)
     int number, digits;
     digits = -1;
 
-    printf("Enter a number up to 4 digits: ");
+    printf("\nEnter a number up to 4 digits: ");
     scanf("%d", &number);
 
     if (number >= 0 && number <= 9)
@@ -28,10 +28,10 @@ int main(void)
         digits = 4;
 
     if (digits == -1)
-        printf("Invalid number.");
+        printf("Invalid number.\n\n");
     else
     {
-        printf("The number %d has %d digit", number, digits);
+        printf("The number %d has %d digit\n\n", number, digits);
         if (digits != 1) printf("s");
     }
 

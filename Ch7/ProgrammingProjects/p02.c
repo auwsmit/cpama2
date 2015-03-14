@@ -13,7 +13,7 @@ int main(void)
 {
     int i, n;
 
-    printf("This program prints a table of squares.\n");
+    printf("\nThis program prints a table of squares.\n");
     printf("Enter the number of entries in a table: ");
     scanf("%d", &n);
     getchar();
@@ -27,6 +27,8 @@ int main(void)
             getchar();
         }
     }
+
+    printf("\n");
 
     return 0;
 }

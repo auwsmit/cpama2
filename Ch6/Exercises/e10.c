@@ -6,6 +6,8 @@ int main(void)
 {
     int i;
 
+    printf("\n");
+
     for (i = 0; i <= 10; i++)
         if (i == 8)
             continue;
@@ -23,6 +25,8 @@ int main(void)
 
         end_of_loop:;
     }
+
+    printf("\n\n");
 
     return 0;
 }

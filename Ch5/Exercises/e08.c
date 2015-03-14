@@ -16,11 +16,11 @@ int main(void)
 {
     int age;
 
-    printf("Input age: ");
+    printf("\nInput age: ");
     scanf("%d", &age);
 
     printf(age >= 13 && age <= 19 ? "Is" : "Isn't");
-    printf(" a teenager.\n");
+    printf(" a teenager.\n\n");
 
     return 0;
 }

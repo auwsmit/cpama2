@@ -12,7 +12,7 @@ int main(void)
      */
     int n[16], rows[4], cols[4], diags[2];
 
-    printf("Enter the numbers from 1 to 16 in any order: ");
+    printf("\nEnter the numbers from 1 to 16 in any order: ");
     scanf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d",
             &n[0], &n[1], &n[2], &n[3], &n[4], &n[5],
             &n[6], &n[7], &n[8], &n[9], &n[10], &n[11],
@@ -38,7 +38,7 @@ int main(void)
 
     printf("\nRow sums: %d %d %d %d\n", rows[0], rows[1], rows[2], rows[3]);
     printf("Column sums: %d %d %d %d\n", cols[0], cols[1], cols[2], cols[3]);
-    printf("Diagonal sums: %d %d\n", diags[0], diags[1]);
+    printf("Diagonal sums: %d %d\n\n", diags[0], diags[1]);
 
     return 0;
 }

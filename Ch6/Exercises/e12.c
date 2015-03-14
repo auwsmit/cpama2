@@ -15,7 +15,7 @@ int main(void)
 {
     int d, n;
 
-    printf("Enter a number: ");
+    printf("\nEnter a number: ");
     scanf("%d", &n);
 
     for (d = 2; d < n; d++)
@@ -27,7 +27,7 @@ int main(void)
         }
     }
 
-    printf("%d is prime!", n);
+    printf("%d is prime!\n\n", n);
 
     return 0;
 }

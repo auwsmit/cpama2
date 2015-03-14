@@ -12,7 +12,7 @@
 
 int main(void)
 {
-    printf("The volume of a %d-meter sphere is: %.2f\n",
+    printf("\nThe volume of a %d-meter sphere is: %.2f\n\n",
             RAD, (4.0f/3.0f) * NUM_PIE * (RAD * RAD * RAD));
 
     return 0;

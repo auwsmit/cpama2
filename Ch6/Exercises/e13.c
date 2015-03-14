@@ -8,6 +8,8 @@ int main(void)
 {
     int n, m;
 
+    printf("\n");
+
     m = 100;
     for (n = 0; m > 0; n++)
     {
@@ -20,6 +22,8 @@ int main(void)
     m = 100;
     for (n = 0; m > 0; m /= 2, n++)
         printf("%d ", m);
+
+    printf("\n\n");
 
     return 0;
 }

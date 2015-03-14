@@ -6,6 +6,8 @@ int main(void)
 {
     int i;
 
+    printf("\n");
+
     /* original while loop */
     i = 1;
     while (i <= 128)
@@ -18,6 +20,8 @@ int main(void)
 
     /* new for loop */
     for (i = 1; i <= 128; i *= 2) printf("%d ", i);
+
+    printf("\n\n");
 
     return 0;
 }

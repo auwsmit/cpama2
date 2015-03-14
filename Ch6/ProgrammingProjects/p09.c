@@ -11,7 +11,7 @@ int main(void)
     float loan, interest, monthlyPayment;
     int payments, i;
 
-    printf("Enter the amount of loan: ");
+    printf("\nEnter the amount of loan: ");
     scanf("%f", &loan);
     printf("Enter interest rate: ");
     scanf("%f", &interest);
@@ -41,5 +41,8 @@ int main(void)
 
         printf(" payment:  $%.2f", loan);
     }
+    
+    printf("\n\n");
+
     return 0;
 }

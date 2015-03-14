@@ -14,7 +14,7 @@ int main(void)
     int precision, i;
     float end_result, factorial, p;
 
-    printf("Enter a number: ");
+    printf("\nEnter a number: ");
     scanf("%d", &precision);
 
     end_result = 1;
@@ -34,7 +34,7 @@ int main(void)
         printf(" + 1/%d!", i);
     }
 
-    printf(" = %.4f\n", end_result);
+    printf(" = %.4f\n\n", end_result);
 
     return 0;
 }

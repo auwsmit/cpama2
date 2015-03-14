@@ -13,7 +13,7 @@ int main(void)
     int i;
 
     scanf("%f%d%f", &x, &i, &y);
-    printf("x: %f, i: %d, y: %f", x, i, y);
+    printf("\nx: %f, i: %d, y: %f\n\n", x, i, y);
 
     return 0;
 }

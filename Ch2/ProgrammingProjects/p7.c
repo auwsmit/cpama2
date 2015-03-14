@@ -8,7 +8,7 @@ int main(void)
 {
     int dollars, twenties, tens, fives;
 
-    printf("Enter a dollar amount: ");
+    printf("\nEnter a dollar amount: ");
     scanf("%d", &dollars);
 
     twenties = dollars / 20;
@@ -21,7 +21,7 @@ int main(void)
     printf("\n$20 bills: %d", twenties);
     printf("\n$10 bills: %d", tens);
     printf("\n $5 bills: %d", fives);
-    printf("\n $1 bills: %d", dollars);
+    printf("\n $1 bills: %d\n\n", dollars);
 
     return 0;
 }
