@@ -5,6 +5,7 @@
  * use a loop to compute the remaining numbers.
  */
 
+/* Answer: */
 int fib_numbers[40] = { 0, 1 }, i;
 
 for (i = 2; i < 40; i++)
