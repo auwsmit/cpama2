@@ -11,7 +11,6 @@
 int main(void)
 {
     int input_h, input_m;
-
     char am_pm;
 
     printf("\nEnter a 12-hour time: ");
