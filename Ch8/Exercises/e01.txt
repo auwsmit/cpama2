@@ -1,0 +1,4 @@
+We discussed using the expression sizeof(a) / sizeof(a[0]) to calculate the number of elements in an array. The expression of sizeof(a) / sizeof(t), where t is the type of a's elements, would also work, but it's considered an inferior technique. Why?
+
+Answer:
+Because the latter expression is less flexible. Now if someone decides to change the datatype of the array, they'll have to change t to that datatype in every subsequent expression.
