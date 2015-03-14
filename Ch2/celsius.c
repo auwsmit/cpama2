@@ -7,14 +7,14 @@
 
 int main(void)
 {
-	float fahrenheit, celsius;
+    float fahrenheit, celsius;
 
-	printf("Enter Fahrenheit temperature: ");
-	scanf("%f", &fahrenheit);
+    printf("Enter Fahrenheit temperature: ");
+    scanf("%f", &fahrenheit);
 
-	celsius = (fahrenheit - FREEZING_PT) * SCALE_FACTOR;
+    celsius = (fahrenheit - FREEZING_PT) * SCALE_FACTOR;
 
-	printf("Celsius equivalent: %.1f\n", celsius);
+    printf("Celsius equivalent: %.1f\n", celsius);
 
-	return 0;
+    return 0;
 }
