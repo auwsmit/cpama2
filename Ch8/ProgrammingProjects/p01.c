@@ -1,4 +1,5 @@
-/* Modify the repdigit.c program of Section 8.1 so that it shows which digits (if any) were repeated:
+/* Modify the repdigit.c program of Section 8.1 so that it shows which digits
+ * (if any) were repeated:
  *
  * Enter a number: 939577
  * Repeated digit(s): 7 9
@@ -45,7 +46,7 @@ int main(void)
 
     for (i = 0; i < 10; i++)
     {
-        if (digit_seen[i][1] == true)
+        if (digit_seen[i][REPEATED] == true)
             printf("%d ", i);
     }
     printf("\n\n");
