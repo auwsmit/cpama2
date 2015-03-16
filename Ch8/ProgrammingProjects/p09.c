@@ -58,6 +58,7 @@ int main(void)
 
     srand((unsigned) time(NULL));
 
+    /* Filling the blank maze array */
     for (row = 0; row < 10; row++)
         for (col = 0; col < 10; col++)
             maze[col][row] = EMPTY_CELL;
@@ -77,7 +78,8 @@ int main(void)
         {
             if (row - 1 >= 0 && maze[row-1][col] == EMPTY_CELL)
                 row--;
-            else {
+            else
+            {
                 blocked[direction] = true;
                 continue;
             }
