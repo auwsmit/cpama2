@@ -31,9 +31,8 @@ int main(void)
 
 int largest_element(int a[], int n)
 {
-    int i, largest;
+    int i, largest = a[0];
 
-    largest = a[0];
     for (i = 1; i < n; i++)
         if (a[i] > largest)
             largest = a[i];
