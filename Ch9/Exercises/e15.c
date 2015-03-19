@@ -39,7 +39,7 @@ double median(double x, double y, double z)
         result = y;
         goto return_value;
     }
-    if (z <= z)
+    if (x <= z)
     {
         result = x;
         goto return_value;
