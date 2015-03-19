@@ -29,7 +29,7 @@ int main(void)
 {
     int size, row, col, prev_row, prev_col, i;
 
-    printf("This program creates a magic square of a specified size.\n");
+    printf("\nThis program creates a magic square of a specified size.\n");
     printf("The size must be an odd number between 1 and 99.\n");
     printf("Enter size of magic square: ");
     scanf("%d", &size);
