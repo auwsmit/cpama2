@@ -14,7 +14,7 @@ int gcd(int m, int n)
         m = n;
         n = remainder;
     } while (n != 0);
-    
+
     return m;
 }
 
