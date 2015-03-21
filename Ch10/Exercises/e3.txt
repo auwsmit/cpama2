@@ -1,0 +1,7 @@
+Suppose that a program has only one function (main). How many different
+variables named i could this program contain?
+
+Answer:
+It could have as many i's as there are blocks in main that declare it.
+So potentially infinite i's, or at least as many as the stack allows for.
+Not 100% sure.
