@@ -16,6 +16,7 @@ int main(void)
     tens     = dollars / 10;
     dollars  = dollars - (tens * 10);
     fives    = dollars / 5;
+    dollars  = dollars - (fives * 5);
     /* dollars contains the remaining singles at this point */
 
     printf("\n$20 bills: %d", twenties);
