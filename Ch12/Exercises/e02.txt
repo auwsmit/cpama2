@@ -1,0 +1,10 @@
+Suppose that high, low, and middle are all pointer variables of the same type,
+and that low and high point to elements of an array. Why is the following
+statement illegal and how could it be fixed?
+
+middle = (low + high) / 2;
+
+Answer:
+It's illegal because pointers can only be subtracted from eachother.
+
+middle = low + (high - low) / 2;
