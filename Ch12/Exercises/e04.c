@@ -6,19 +6,19 @@
 
 /* external variables */
 int contents[STACK_SIZE];
-int* top_ptr = 0;
+int* top_ptr;
 
 void make_empty(void)
 {
-    *top_ptr = 0;
+    top_ptr = &contents[0];
 }
 
 bool is_empty(void)
 {
-    return *top_ptr == 0;
+    return top_ptr == &contents[0];
 }
 
 bool is_full(void)
 {
-    return *top_ptr == STACK_SIZE;
+    return top_ptr == &contents[STACK_SIZE];
 }
