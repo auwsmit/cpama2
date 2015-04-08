@@ -21,7 +21,7 @@ int main(void)
     char input, msg[BUF];
 
     printf("\nEnter a message: ");
-    for (p = msg; p < msg + BUF; p++)
+    for (p = &msg[0]; p < &msg[0] + BUF; p++)
     {
         if ((input = getchar()) == '\n') break;
         *p = input;
@@ -29,7 +29,7 @@ int main(void)
 
     /* print the message in reverse, starting from the last character */
     printf("Reversal is: ");
-    for (p = p-1; p >= msg; p--)
+    for (p = p-1; p >= &msg[0]; p--)
         putchar(*p);
     printf("\n\n");
 
