@@ -32,7 +32,7 @@ void quicksort(int a[], int low, int high)
     if (low >= high) return;
     middle = split(a, low, high);
     quicksort(a, low, middle - 1);
-    quicksort(a, middle, high);
+    quicksort(a, middle + 1, high);
 }
 
 int split(int a[], int low, int high)

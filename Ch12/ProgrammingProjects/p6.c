@@ -34,7 +34,7 @@ void quicksort(int *low, int *high)
     if (low >= high) return;
     middle = split(low, high);
     quicksort(low, middle - 1);
-    quicksort(middle, high);
+    quicksort(middle + 1, high);
 }
 
 int *split(int *low, int *high)
