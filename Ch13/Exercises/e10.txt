@@ -1,0 +1,15 @@
+The following function supposedly creates an identical copy of a string.
+What's wrong with the function?
+
+char *duplicate(const char *p)
+{
+  char *q;
+
+  strcpy(q, p);
+  return q;
+}
+
+Answer:
+It's wrong because q was never set to point anywhere, and it's a local
+variable, meaning it's gone after the function is over.
+

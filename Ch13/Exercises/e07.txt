@@ -1,0 +1,11 @@
+Suppose that str is an array of characters. Which one of the following
+statements is not equivalent to the other three?
+
+(a) *str = 0;
+(b) str[0] = '\0';
+(c) strcpy(str, "");
+(d) strcat(str, "");
+
+Answer:
+D is not equivalent, because it leaves the string the same, while the other
+three erase the string by setting it's first character to null.
