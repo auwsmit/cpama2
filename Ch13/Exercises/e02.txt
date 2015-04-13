@@ -1,0 +1,20 @@
+Suppose that p has been declared as follows:
+
+char *p = "abc";
+
+Which of the following function calls are legal? Show the output produced by
+each legal call, and explain why the others are illegal.
+
+(a) putchar(p);
+(b) putchar(*p);
+(c) puts(p);
+(d) puts(*p);
+
+Answer:
+A - Illegal, putchar takes a character, but was given a pointer
+B - Legal
+    Output: a
+C - Legal
+    Output: abc
+
+D - Illegal, puts takes a string, but was given a character
