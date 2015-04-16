@@ -36,6 +36,12 @@ int main(void)
         scanf("%2d", &day);
         if (day == 0)
             break;
+        else if (day < 0 || day > 31)
+        {
+            printf("Error: Day out of range\n");
+            while (getchar() != '\n'); /* clear buffer */
+            continue;
+        }
         sprintf(day_str, "%2d", day);
         read_line(msg_str, MSG_LEN);
 
