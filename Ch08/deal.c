@@ -25,7 +25,7 @@ int main(void)
     while (num_cards > 0)
     {
         suit = rand() % NUM_SUITS;      /* picks a random suit */
-        rank = rand() % NUM_SUITS;      /* picks a random rank */
+        rank = rand() % NUM_RANKS;      /* picks a random rank */
         if (!in_hand[suit][rank])
         {
             in_hand[suit][rank] = true;
