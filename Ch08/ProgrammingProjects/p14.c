@@ -9,24 +9,23 @@
  * a separate char variable. Then use a second loop to search backward through
  * the array for the beginning of the last word. Print the last word, then
  * search backward for the next-to-last word. Repeat until the beginning of the
- * array is  reached. Finally, print the terminating character.
+ * array is reached. Finally, print the terminating character.
  */
 #include <stdio.h>
 
-#define BUFFER 50
+#define LEN 50
 
 int main(void)
 {
-    char input, terminator = 0, sentence[BUFFER] = {0};
-    int i, j, last_space;
-
-    last_space = BUFFER;
+    char input, terminator = 0, sentence[LEN+1] = {0};
+    int i, j, last_space = LEN + 1;
 
     printf("\nEnter a sentence: ");
     for (i = 0; (input = getchar()) != '\n'; i++)
     {
         if (input == '.' || input == '?' || input == '!')
         {
+            last_space = i;
             terminator = input;
             break;
         }
@@ -40,7 +39,7 @@ int main(void)
     }
 
     printf("Reversal of sentence: ");
-    for (i = BUFFER - 1; i >= 0; i--)
+    for (i = last_space; i > 0; i--)
     {
         if (sentence[i] == ' ')
         {
@@ -52,9 +51,9 @@ int main(void)
             putchar(sentence[i]);
         }
     }
-    for (; i != last_space; i++)
+    while (sentence[i] != '\0' && sentence[i] != ' ')
     {
-        putchar(sentence[i]);
+        putchar(sentence[i++]);
     }
     printf("%c\n\n", terminator);
 
