@@ -1,4 +1,5 @@
-/* Modify Programming Project 15 from Chapter 8 so that it includes the following function:
+/* Modify Programming Project 15 from Chapter 8 so that it includes the
+ * following function:
  *
  * void encrypt(char *message, int shift);
  *

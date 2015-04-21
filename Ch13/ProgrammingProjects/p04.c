@@ -1,4 +1,5 @@
-/* Write a program named reverse.c that echoes its command-line arguments in reverse order. Run the program by typing
+/* Write a program named reverse.c that echoes its command-line arguments in
+ * reverse order. Run the program by typing
  *
  * reverse void and null
  *
