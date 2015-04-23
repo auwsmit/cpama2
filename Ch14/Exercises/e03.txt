@@ -1,0 +1,12 @@
+Let DOUBLE be the following macro:
+
+#define DOUBLE(x) 2*x
+
+(a) What is the value of DOUBLE(1+2)?
+(b) What is the value 4/DOUBLE(2)?
+(c) Fix the definition of DOUBLE.
+
+Answer:
+A - 4
+B - 4
+C - #define DOUBLE(x) (2*(x))

@@ -1,0 +1,18 @@
+For each of the folloing macros, give an example that illustrates a problem with
+the macro and show how to fix it.
+
+(a) #define AVG(x,y) (x+y)/2
+(b) #define AREA(x,y) (x)*(y)
+
+Answer:
+A - Problem:
+        The replacement list is missing many parenthesis, meaning the expression
+        may be evaluated incorrectly. For example, AVG(4,2*2) would become
+        (4+2*2)/2.
+    Solution:
+        #define AVG(x,y) (((x)+(y))/2)
+
+B - Problem:
+        Same as A
+    Solution:
+        #define AREA(x,y) ((x)*(y))
