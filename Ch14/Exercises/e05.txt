@@ -13,5 +13,5 @@ each of the following program fragments.
     putchar(TOUPPER(s[++i]));
 
 Answer:
-A - B
-B - 1
+A - D
+B - 2
