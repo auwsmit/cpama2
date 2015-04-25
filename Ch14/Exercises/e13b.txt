@@ -1,0 +1,31 @@
+(a) Show what the following program will look like after preprocessing. You
+    may ignore any lines added to the program as a result of including the
+    <stdio.h> header.
+
+#include <stdio.h>
+
+#define N 100
+
+int main(void)
+{
+  f();
+#ifdef N
+#undef N
+#endif
+  return 0;
+}
+
+void f(void)
+{
+#if defined(N)
+  printf("N is %d\n", N);
+#else
+  printf("N is undefined\n");
+#endif
+}
+
+(b) What will be the output of this program?
+
+Answer:
+The output will be "N is undefined" because the preprocessor directives are
+evaluated from top to bottom before the program is ran.
