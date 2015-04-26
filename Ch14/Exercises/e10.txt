@@ -1,0 +1,5 @@
+Functions can often--but not always--be written as parameterized macros. Discuss
+what characteristics of a function would make it suitable as a macro.
+
+Answer:
+Short and simple functions seem best suited to be macros.
