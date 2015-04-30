@@ -11,7 +11,7 @@ int num_words = 0;
 void clear_line(void)
 {
     line[0] = '\0';
-    line_len = '0';
+    line_len = 0;
     num_words = 0;
 }
 
