@@ -1,0 +1,17 @@
+Section 15.1 listed several advantages of dividing a prgram into multiple source files.
+
+(a) Describe several other advantages.
+(b) Describe some disadvantages.
+
+Answer:
+A. Advantages:
+    - Grouping related functions and variables to better clarify the structure of
+      the program.
+    - Separate source files compile separately, which saves time.
+    - Functions are more easily reused in other programs when grouped in separate
+      source files.
+B. Disadvantages:
+    - More files means more complexity, which means its easier to overlook
+      details and make mistakes.
+    - Harder to maintain and update.
+

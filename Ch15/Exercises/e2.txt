@@ -1,0 +1,12 @@
+Which of the following should not be put in a header file? Why not?
+
+(a) Function prototypes
+(b) Function definitions
+(c) Macro definitions
+(d) Type definitions
+
+Answer:
+B. Function definitions shouldn't be in header files because when the function
+is modified, any source files that included the function's header file would
+need to be recompiled. Normally that would only be the case if the function's
+prototype was modified.

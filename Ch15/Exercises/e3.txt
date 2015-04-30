@@ -1,0 +1,9 @@
+We saw that writing #include <file> instead of #include "file" may not work if
+file is one that we've written. Would there be any problem with writing #include
+"file" instead of #include <file> if file is a system header?
+
+Answer:
+There would only be a problem if you had (for some strange reason) created your
+own file with the same name as the system header aforementioned, because when
+using quotes, the compiler searches the current directory for that file first,
+and then goes to wherever the system headers are.
