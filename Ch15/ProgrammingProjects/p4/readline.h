@@ -1,3 +1,6 @@
+#ifndef READLINE_H
+#define READLINE_H
+
 /***********************************************************
  * read_line: Reads characters from stdin into a string    *
  *            str of maximum length n.                     *
@@ -6,3 +9,5 @@
  *            even if there were more than n.              *
  **********************************************************/
 int read_line(char str[], int n);
+
+#endif
