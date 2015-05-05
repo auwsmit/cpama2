@@ -11,6 +11,13 @@
  * Returns -1 if d1 is an earlier date than d2, +1 if d1 is later than d2, and
  * 0 if d1 and d2 are the same.
  */
+#define FEB 1
+typedef enum {false, true} bool;
+
+struct date {
+    int day, month, year;
+};
+
 int day_of_year(struct date d)
 {
     bool is_leap_year;
