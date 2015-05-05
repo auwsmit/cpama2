@@ -1,0 +1,13 @@
+In the following declarations, the x and y structures have members named x and y:
+
+struct { int x, y; } x;
+struct { int x, y; } y;
+
+Are these declarations legal on an individual basis?
+Could both declarations appear as shown in a program? Justify your answer.
+
+Answer:
+Yes, both declarations are legal individually; and yes, they could appear as
+shown in a program. This is because variables in structs have their own separate
+namespace, so even though x and y are seemingly declared multiple times, they're
+fine because they aren't conflicting within their own namespaces.
