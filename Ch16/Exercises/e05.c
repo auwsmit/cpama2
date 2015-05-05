@@ -14,10 +14,10 @@
 #define FEB 1
 typedef enum {false, true} bool;
 
-struct date {
-    int day, month, year;
-};
+struct date { int day, month, year; };
 
+/* Answer:
+ * A: */
 int day_of_year(struct date d)
 {
     bool is_leap_year;
@@ -41,4 +41,23 @@ int day_of_year(struct date d)
         d.day += month_days[i];
 
     return d.day;
+}
+
+/* B: */
+int compare_dates(struct date d1, struct date d2)
+{
+    if (d1.year < d2.year)
+        return -1;
+    else if (d1.year > d2.year)
+        return 1;
+    else if (d1.month < d2.month)
+        return -1;
+    else if (d1.month > d2.month)
+        return 1;
+    else if (d1.day < d2.day)
+        return -1;
+    else if (d1.day > d2.day)
+        return 1;
+    else /* dates are equal */
+        return 0;
 }
