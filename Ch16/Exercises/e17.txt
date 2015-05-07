@@ -1,0 +1,24 @@
+Suppose that b and i are declared as follows:
+
+enum {FALSE, TRUE} b;
+int i;
+
+Which of the following statements are legal? Which ones are "safe" (always yield
+a meaningful result)?
+
+(a) b = FALSE;
+(b) b = i;
+(c) b++;
+(d) i = b;
+(e) i = 2 * b + 1;
+
+Answer:
+A - Legal
+
+B - Illegal because i is uninitialized, and has an unknown value
+
+C - Illegal because b is uninitialized
+
+D - Illegal because b is uninitialized
+
+E - Illegal because b is uninitialized

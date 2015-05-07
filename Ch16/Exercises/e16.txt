@@ -1,0 +1,20 @@
+Which of the following statements about enumeration are true?
+
+(a) An enumeration constant may represent any integer specified by the
+programmer.
+
+(b) Enumeration constants have exactly the same properties as constants created
+using #define.
+
+(c) Enumeration constants have the values 0, 1, 2, ... by default.
+
+(d) All constants in an enumeration must have different values.
+
+(e) Enumeration constants may be used as integers in expressions.
+
+Answer:
+A - true
+B - false, enumerations have scope
+C - true
+D - false
+E - true
