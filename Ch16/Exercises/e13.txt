@@ -1,8 +1,8 @@
 Suppose that s is the following structure (point is a structure tag declared in Exercise 10):
 
 struct shape {
-  int shape_kind;
-  struct point center;
+  int shape_kind;           /* RECTANGLE or CIRCLE */
+  struct point center;      /* coordinates of center */
   union {
     struct {
       int height, width;
