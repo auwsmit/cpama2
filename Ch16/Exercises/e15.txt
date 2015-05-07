@@ -1,0 +1,8 @@
+(a) Declare a tag for an enumeration whose values represent the seven days of
+the week.
+
+(b) Use typedef to define a name for the enumeration of part (a).
+
+Answer:
+A - enum { MON, TUE, WED, THU, FRI, SAT, SUN };
+B - typedef enum { MON, TUE, WED, THU, FRI, SAT, SUN } weekday;

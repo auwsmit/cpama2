@@ -1,0 +1,22 @@
+Suppose that s is the following structure:
+
+struct {
+  double a;
+  union {
+    char b[4];
+    double c;
+    int d;
+  } e;
+  char f[4];
+} s;
+
+If char values occupy one byte, int values occupy four bytes, and double values
+occupy eight bytes, how much space will a C compiler allocate for s?
+(Assume that the compiler leaves no "holes" between members.)
+
+Answer:
+The double variable a takes up 8 bytes, the union e takes up 8 bytes because its
+largest member is a double, and the character array f takes up 4 bytes, one byte
+per character in the array.
+
+struct s is 8 + 8 + 4 = 20 bytes in size
