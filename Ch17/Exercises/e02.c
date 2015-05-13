@@ -12,3 +12,19 @@
 #include <string.h>
 
 char *duplicate(char* str);
+
+int main(void)
+{
+    char *str1 = "Here's a string";
+    char *str2 = duplicate(str1);
+
+    printf("\nDuplicate: %s\n\n", str2);
+    return 0;
+}
+
+char *duplicate(char* str)
+{
+    char *copy = malloc(sizeof(str) + 1);
+    strcpy(copy, str);
+    return copy;
+}
