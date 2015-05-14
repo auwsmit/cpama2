@@ -1,0 +1,27 @@
+Suppose that f and p are declared as follows:
+
+struct {
+  union {
+    char a, b;
+    int c;
+  } d;
+  int e[5];
+} f, *p = &f;
+
+Which of the following statements are legal?
+
+(a) p->b = ' ';
+(b) p->e[3] = 10;
+(c) (*p).d.a = '*';
+(d) p->d->c = 20;
+
+Answer:
+A - Illegal because the variable b is inside the union d, not directly in f.
+    Should be: p->d.b = ' ';
+
+B - Legal
+
+C - Legal
+
+D - Illegal because d isn't a pointer.
+    Should be: p->d.c = 20;
