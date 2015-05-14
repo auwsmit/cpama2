@@ -1,0 +1,22 @@
+The following loop is supposed to delete all nodes from a linked list and
+release memory that they occupy. Unfortunately the loop is incorrect. Explain
+what's wrong with it and show how to fix the bug.
+
+for (p = first; p != NULL; p = p->next)
+    free(p);
+
+Answer:
+The loop is incorrect because the node p's memory is freed before it attempts to
+go to the next node. p becomes a dangling pointer. The way to fix it is to use
+a temporary variable that remembers where p was, so it can be freed after moving
+on to the next node:
+
+struct node *temp;
+p = first;
+while (p != NULL)
+{
+    temp = p;
+    p = p->next;
+    free(temp);
+}
+
