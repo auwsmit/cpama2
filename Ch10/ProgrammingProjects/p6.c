@@ -69,8 +69,8 @@ void evaluate_expression(void)
         switch(input)
         {
             case '+': case '-': case '*': case '/':
-                operandA = pop();
                 operandB = pop();
+                operandA = pop();
         }
         if (input >= '0' && input <= '9')
             push(input - '0');

@@ -6,7 +6,7 @@
 #define STACK_SIZE 100
 
 /* external variables */
-char contents[STACK_SIZE];
+int contents[STACK_SIZE];
 int top = 0;
 
 bool is_empty(void)
@@ -19,7 +19,7 @@ bool is_full(void)
     return top == STACK_SIZE;
 }
 
-void push(char i)
+void push(int i)
 {
     if (is_full())
         stack_overflow();
@@ -27,7 +27,7 @@ void push(char i)
         contents[top++] = i;
 }
 
-char pop(void)
+int pop(void)
 {
     if (is_empty())
         stack_underflow();

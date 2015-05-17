@@ -58,8 +58,8 @@ void evaluate_expression(void)
         switch(input)
         {
             case '+': case '-': case '*': case '/':
-                operandA = pop();
                 operandB = pop();
+                operandA = pop();
         }
         if (input >= '0' && input <= '9')
             push(input - '0');
@@ -78,6 +78,11 @@ void evaluate_expression(void)
             printf("\n");
             exit(EXIT_SUCCESS);
         }
+    }
+    if (top > 1)
+    {
+        printf("Too many operands in expression\n\n");
+        exit(EXIT_FAILURE);
     }
 }
 
