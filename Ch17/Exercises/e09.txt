@@ -1,0 +1,7 @@
+
+(&x)->a is the same as x.a. Justify your answer.
+
+Answer:
+True, because the -> operator is used to access a structure's member through
+a pointer to that structure, and &x is the equivalent to a pointer (address
+variable) to x.
