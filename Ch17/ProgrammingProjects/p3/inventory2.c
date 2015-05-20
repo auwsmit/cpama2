@@ -189,7 +189,7 @@ void erase(void)
 
     printf("Enter part number: ");
     scanf("%d", &number);
-    for (; cur != NULL; cur = cur->next) {
+    for (; cur != NULL; prev = cur, cur = cur->next) {
         if (cur->number == number) {
             if (prev == NULL)
                 inventory = cur->next;
@@ -199,7 +199,6 @@ void erase(void)
             printf("Part deleted.\n");
             return;
         }
-        prev = cur;
     }
     printf("Part not found.\n");
 }
