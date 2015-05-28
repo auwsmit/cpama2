@@ -1,0 +1,23 @@
+State whether each of the following statements is true or false.
+Justify each answer.
+
+(a) Every variable with static storage duration has file scope
+(b) Every variable declared inside a function has no linkage.
+(c) Every variable with internal linkage has static storage duration.
+(d) Every parameter has block scope.
+
+Answer:
+A - false
+    A static variable declared outside a block has file scope.
+    A static variable declared inside a block has block scope.
+
+B - false
+    An extern variable will have internal linkage if it's defined as static
+    outside any blocks. Otherwise it will be external.
+
+C - true
+    Only static variables can be internal, by being declared outside function
+    blocks.
+
+D - true
+    All variables declared within a function have block scope.

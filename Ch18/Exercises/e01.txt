@@ -1,0 +1,32 @@
+For each of the following declarations, identify the storage class, type
+qualifiers, type specifiers, declarators, and initializers.
+
+(a) static char **lookup(int level);
+(b) volatile unsigned long io_flags;
+(c) extern char *file_name[MAX_FILES], path[];
+(d) static const char token_buf[] = "";
+
+Answer:
+A - storage class: static
+    type qualifiers: none
+    type specifiers: char
+    declarators: **lookup(int level)
+    initializers: none
+
+B - storage class: automatic
+    type qualifiers: volatile
+    type specifiers: unsigned long
+    declarators: io_flags
+    initializers: none
+
+C - storage class: unknown until definition
+    type qualifiers: none
+    type specifiers: char
+    declarators: *file_name[MAX_FILES] and path[]
+    initializers: none
+
+D - storage class: static
+    type qualifiers: const
+    type specifiers: char
+    declarators: token_buf[]
+    initializers: "" (an empty string)

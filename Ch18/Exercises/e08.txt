@@ -1,0 +1,29 @@
+Write a complete description of the type of x as specified by each of the
+following declarations.
+
+(a) char (*x[10])(int);
+(b) int (*x(int))[5];
+(c) float *(*x(void))(int);
+(d) void (*x(int, void (*y)(int)))(int);
+
+Answer:
+A - array of
+    pointers to
+    functions with an int argument
+    which return char
+
+B - a function with an int argument
+    which returns a pointer to
+    an array of ints
+
+C - function with no arguments
+    which returns a pointer to
+    a function with an int argument
+    which returns a float pointer
+
+D - a function with an int as its first argument
+    and a pointer to a function with an int argument
+    with no return value as the second argument
+    which returns a pointer to
+    a function with an int argument
+    with no return value
