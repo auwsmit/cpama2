@@ -1,0 +1,11 @@
+(a) Write a complete description of the type of the function f, assuming that
+it's declared as follows:
+
+int (*f(float (*)(long), char *))(double);
+
+(b) Give an example of how f would be called.
+
+Answer:
+A - The f function returns a function pointer to a function with a double argument that returns an int
+
+B - f(function_name, char_ptr);
