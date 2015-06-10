@@ -1,5 +1,3 @@
-/* Modify the stack2.c file to use the PUBLIC and PRIVATE macros. */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "stack.h"
