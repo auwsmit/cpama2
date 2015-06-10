@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "stackADT.h"
+#include "stack.h"
 
 int main(void)
 {
@@ -25,7 +25,7 @@ int main(void)
 
     push(s2, 3);
     make_empty(s2);
-    if (!is_empty(s2))
+    if (is_empty(s2))
         printf("s2 is empty\n");
     else
         printf("s2 is not empty\n");
