@@ -1,0 +1,8 @@
+Write macros named GET_RED, GET_GREEN, and GET_BLUE that, when given a color as
+an argument (see Exercise 4), return its 8-bit red, green, and blue
+intensitities.
+
+Answer:
+#define GET_RED(color) ((color) & 0xff)
+#define GET_GREEN(color) ((color) >> 8 & 0xff)
+#define GET_BLUE(color) ((color) >> 16 & 0xff)

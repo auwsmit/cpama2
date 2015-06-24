@@ -1,0 +1,9 @@
+Describe a simple way to "toggle" a bit (change it from 0 to 1 or from 1 or 0).
+Illustrate the technique by writing a statement that toggles bit 4 of the
+variable i.
+
+Answer:
+You can use the tertiary operator to check the current state of the bit in i,
+and then set or clear the bit depending on that.
+
+Statement: (i & 8) ? i &= ~8 : i |= 8;
