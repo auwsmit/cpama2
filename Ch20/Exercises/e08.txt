@@ -1,0 +1,16 @@
+Let f be the following function:
+
+unsigned int f(unsigned int i, int m, int n)
+{
+  return (i >> (m + 1 - n)) && ~(~0 << n);
+}
+
+(a) What is the value of ~(~0 << n)?
+(b) What does this function do?
+
+
+Answer:
+A - The value is 2 ^ n.
+B - It returns a bit-field within i of length n starting at position m.
+    Positions are assumed to be numbered starting from the rightmost bit, which
+    is position 0.
