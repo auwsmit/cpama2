@@ -1,0 +1,18 @@
+If n is an unsigned int variable, what effect does the following statement have
+on the bits in n?
+
+n &= n - 1;
+
+Hint: Consider the effect on n if this statement is executed more than once.
+
+Answer:
+It removes the least significant 1 bit of n.
+If n is 1010, it will become 1000 because:
+
+  1010
+  1001
+   &=
+  1000
+
+If this is executed more than once, it can be used to do something based on how
+many 1s are in a bit field.
