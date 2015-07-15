@@ -1,0 +1,18 @@
+When a macro hides a function, which must come first in the header file: the
+macro definition or the function prototype? Justify your answer.
+
+Answer:
+The function prototype must always come first, because otherwise the function
+name in the prototype will be expanded as a valid macro by the preprocessor.
+
+For example, say these were hypothetically defined in a header in the following
+order:
+
+#define add_nums(x,y) ((x) + (y))
+int add_nums(int x, int y);
+
+After preproccessing, the prototype would become
+
+int ((x) + (y))(int x, int y)
+
+which is obviously erroneous

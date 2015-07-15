@@ -1,0 +1,9 @@
+Having located the header files on your system (see Exercise 1), find a standard
+header in which a macro hides a function.
+
+Answer:
+alloca.h uses the following macro to hide the function alloca:
+
+#ifdef	__GNUC__
+# define alloca(size)	__builtin_alloca (size)
+#endif /* GCC.  */

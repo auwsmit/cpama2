@@ -1,0 +1,62 @@
+Locate where header files are kept on your system. Find the nonstandard headers
+and determine the purpose of each.
+
+Answer:
+aio.h              - Asynchronous input and output
+aliases.h          - Functions to access the alias database
+alloca.h           - A function to allocate memory which is automatically freed
+ar.h               - Archive information
+argp.h             - Functions for Argp, an interface for parsing unix-style argument vectors
+argz.h             - Argz functions
+autosprintf.h      - Formatted output to an ostream
+byteswap.h         - Defines parameterized macros
+cifsidmap.h        - ID Mapping Plugin interface for cifs-utils
+cpio.h             - Magic numbers for the cpio archive format
+crypt.h            - Password encryption
+curses.h           - Definitions for screen handling and optimisation functions 
+dirent.h           - Allows the opening and listing of directories
+dlfcn.h            - Dynamic linking
+dlg_colors.h       - Defines dialog colors
+dlg_config.h       - Automatically generated configuration definitions
+dlg_keys.h         - Runtime binding support for dialog
+elf.h              - Defines standard ELF types, structures, and macros
+endian.h           - Deals with endianness of numbers
+envz.h             - Routines for dealing with '\0' separated environment vectors
+err.h              - Utility functions for error messages
+error.h            - Declaration for error-reporting function
+execinfo.h         - Defines backtrace related functions
+expat.h            - Defines API for expat, an XML parser
+expat_external.h   - External API definitions for expat
+fcntl.h            - File opening, locking and other operations
+features.h         - Defines on whether to include algorithm variants
+fmtmsg.h           - Message display structures
+fnmatch.h          - Filename matching
+fstab.h            - Definitions for file system table
+ftw.h              - File tree traversal
+glob.h             - Pathname "globbing" (pattern-matching)
+grp.h              - User group information and control
+iconv.h            - Codeset conversion facility
+libgen.h           - Pathname manipulation
+monetary.h         - String formatting of monetary units
+mqueue.h           - Message queue
+netdb.h            - Translating protocol and host names into numeric addresses. Part of Berkeley sockets
+nl_types.h         - Localization message catalog functions
+poll.h             - Asynchronous file descriptor multiplexing
+pthread.h          - Defines an API for creating and manipulating POSIX threads
+pwd.h              - passwd (user information) access and control
+regex.h            - Regular expression matching
+sched.h            - Execution scheduling
+search.h           - Search tables
+semaphore.h        - POSIX semaphores
+spawn.h            - Process spawning
+strings.h          - Case-insensitive string comparisons
+stropts.h          - Stream manipulation, including ioctl
+syslog.h           - System error logging
+tar.h              - Magic numbers for the tar archive format
+termios.h          - Allows terminal I/O interfaces
+ulimit.h           - Resource limiting
+unistd.h           - Various essential POSIX functions and constants
+utime.h            - inode access and modification times
+utmpx.h            - user accounting database functions
+wait.h             - Status of terminated child processes (see wait)
+wordexp.h          - Word-expansion like the shell would perform
