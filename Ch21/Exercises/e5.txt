@@ -1,0 +1,12 @@
+The islower function, which belongs to <ctype.h>, tests whether a character is
+a lower-case letter. Why would the following macro version of islower not be
+legal according to the C standard? (You may assume that the character set is
+ASCII.)
+
+#define islower(c) ((c) >= 'a' && (c) <= 'z')
+
+Answer:
+The macro is illegal because it evaluates its argument more than once. This is
+a problem because an argument may be modified after evaluation. For example, if
+islower(var--) was called, var would be incorrectly compared with 'z', because
+the comparison with 'a' would change var's value.
