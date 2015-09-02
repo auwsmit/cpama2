@@ -1,0 +1,31 @@
+The following loop appears in the fcopy.c program:
+
+while ((ch = getc(source_fp)) != EOF)
+  putc(ch, dest_fp);
+
+Suppose that we neglected to put parentheses around ch = getc(source_fp):
+
+while (ch = getc(source_fp) != EOF)
+  putc(ch, dest_fp);
+
+Would the program compile without an error? If so, what would the program do
+when it's run?
+
+Answer:
+Some compilers will warn you if warning checks are enabled, but the program will
+compile without error.
+
+When the program is run,
+
+(ch = getc(source_fp) != EOF)
+
+will become (ch = 1) or (ch = 0) based on how
+
+getc(source_fp) != EOF
+
+is evaluated. This happens because the relational operators (== and !=) have
+higher precedence than the assignment operator (=).
+
+So the new file will have the same number of characters, but because of how ch
+is assigned, every character will be the ASCII character 1 aka SOH (start of
+heading).

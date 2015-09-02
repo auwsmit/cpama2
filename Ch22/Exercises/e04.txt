@@ -1,0 +1,22 @@
+Show how each of the following numbers will look if displayed by printf with
+%#012.5g as the conversion specification:
+
+(a) 83.7361
+(b) 29748.6607
+(c) 1054932234.0
+(d) 0.0000235218
+
+Answer:
+The conversion specification... specifcations:
+ # - trailing zeros aren't removed
+ 0 - numbers are padded with leading zeros
+12 - minimum field width
+ 5 - number of significant digits
+ g - displays number as either exponential or
+     fixed decimal depending on its size
+
+Output:
+A - 00000083.736
+B - 00000029748.
+C - 01.0549e+009
+D - 02.3522e-005

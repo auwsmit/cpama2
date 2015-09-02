@@ -1,0 +1,5 @@
+Is there any difference between the printf conversion specifications %.4d and
+%04d? If so, explain what it is.
+
+Answer:
+No, both are equivalent.
