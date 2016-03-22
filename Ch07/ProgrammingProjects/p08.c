@@ -33,6 +33,8 @@ int main(void)
     switch (toupper(am_pm))
     {
         case 'A':
+            if (input_h == 12)
+                input_h -= 12;
             break;
         case 'P':
             input_h = input_h + 12;

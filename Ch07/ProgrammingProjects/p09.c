@@ -19,6 +19,8 @@ int main(void)
     switch (toupper(am_pm))
     {
         case 'A':
+            if (input_h == 12)
+                input_h -= 12;
             break;
         case 'P':
             input_h = input_h + 12;
@@ -28,7 +30,7 @@ int main(void)
             return 0;
     }
 
-    printf("Equivalent 24-hour time: %d:%d\n\n", input_h, input_m);
+    printf("Equivalent 24-hour time: %.2d:%.2d\n\n", input_h, input_m);
 
     return 0;
 }
