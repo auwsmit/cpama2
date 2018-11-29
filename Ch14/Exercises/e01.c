@@ -9,9 +9,9 @@
  */
 #include <stdio.h>
 
-#define A_CUBE(x) ((x)*(x))
-#define B_REMAINDER(n) ((n)/4)
-#define C_LESSTHAN(x, y) (((x)*(y)) ? 1 : 0)
+#define A_CUBE(x) ((x)*(x)*(x))
+#define B_REMAINDER(n) ((n)%4)
+#define C_LESSTHAN(x, y) (((x)*(y)) < 100 ? 1 : 0)
 
 int main(void)
 {
